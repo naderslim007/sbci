@@ -1,0 +1,274 @@
+<template name="duties">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "duties"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Employer OHSA</h3>
+				{{else}}
+				<h4>Employeur LSST</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50 0,0"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<p>(Section 25): Employer means any person who employs one or more workers or contracts for the services of one or more workers and includes a contractor or subcontractor.</p>
+			<p>Employer’s general duty:</p>
+			<p>(Section 25 (2)(h)): An employer shall take every precaution reasonable in the circumstance for the protection of the worker.</p>
+			{{else}}
+			<p>(article 25) Personne qui emploie un ou plusieurs travailleurs ou qui loue les services d’un ou de plusieurs travailleurs; s’entend en outre de l’entrepreneur ou du sous-traitant.</p>
+			<p>Devoir général de l’employeur (25 [2] [h]) :</p>
+			<p>Prend toutes les précautions raisonnables dans les circonstances pour assurer la protection du travailleur.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Supervisor (Principal)</h3>
+				{{else}}
+				<h4>Superviseur (Direction d’école)</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<p>(Section 27): A supervisor is a person who has charge of a workplace or authority over a worker.</p>
+			<h5>Supervisors shall:</h5>
+			<ul>
+				<li>Take every precaution reasonable in the circumstances to protect a worker.</li>
+				<li>Advise a worker of any potential or actual health and safety dangers known by the supervisor.</li>
+				<li>Ensure that any equipment, protective devices or clothing required by the employer is used or worn by the employee.</li>
+				<li>Make sure workers work safely and use protective equipment.</li>
+				<li>Ensure that a worker complies with the Act and regulations.</li>
+			</ul>
+			{{else}}
+			<p>(article 27) Personne qui a la responsabilité d’un lieu de travail ou qui exerce de l’autorité sur un travailleur.</p>
+			<p>Le superviseur :</p>
+			<ul>
+				<li>prend toutes les précautions raisonnables dans les circonstances pour assurer la protection du travailleur;</li>
+				<li>informe le travailleur de l’existence de tout danger éventuel ou réel dont il a connaissance et qui menace sa santé ou sa sécurité;</li>
+				<li>veille à ce que le travailleur emploie ou porte le matériel et les appareils ou vêtements de protection exigés par l’employeur;</li>
+				<li>veille à ce que le travail soit réalisé de manière sécuritaire et à ce que l’équipement de protection soit utilisé;</li>
+				<li>veille à ce que le travailleur respecte la présente loi et les règlements.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Employee (Worker)</h3>
+				{{else}}
+				<h4>Travailleur</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<p>(Section 28): Workers have a general duty to protect their own health and safety and that of others around them.</p>
+			<h5>“Worker” includes any of the following:</h5>
+			<ul>
+				<li>A person who performs work or supplies services for monetary compensation.</li>
+				<li>A secondary school student who performs work or supplies services for no monetary compensation under a work experience program authorized by the school board that operates outside the school in which the student is enrolled.</li>
+				<li>A person who performs work or supplies services for no monetary compensation under a program approved by a college of applied arts and technology, university or other post-secondary institution. This includes co-operative education students and Teachers on work placement.</li>
+				<li>A person who receives training from an employer, but who, under the Employment Standards Act, 2000, is not an employee for the purposes of that Act because the conditions set out in subsection 1 (2) of that Act have been met.</li>
+			</ul>
+			<p>Such other persons as may be prescribed who perform work or supply services to an employer for no monetary compensation.</p>
+			<h5>Workers shall:</h5>
+			<ul>
+				<li>Use or wear any equipment, protective devices or clothing required for safety, as demonstrated by your organization.</li>
+				<li>Not remove or make ineffective any protective devices required by the employer.</li>
+				<li>Not participate in boisterous conduct.</li>
+				<li>Report to the employer or supervisor any contravention of the Act and regulations.</li>
+				<li>Work in compliance with the Act and regulations.</li>
+			</ul>
+			{{else}}
+			<p>(article 28): Personne qui exécute un travail ou qui fournit des services rémunérés en argent.</p>
+			<h5>“Travailleur” désigne l’une ou l’autre des personnes suivantes :</h5>
+			<ul>
+				<li>La personne qui exécute un travail ou fournit des services contre rémunération en argent.</li>
+				<li>L’élève du secondaire qui exécute un travail ou fournit des services sans rémunération en argent dans le cadre d’un programme d’initiation à la vie professionnelle autorisé par le conseil scolaire dont relève l’école où il est inscrit.</li>
+				<li>La personne qui exécute un travail ou fournit des services sans rémunération en argent dans le cadre d’un programme approuvé par un collège d’arts appliqués et de technologie, une université ou un autre établissement post secondaire. Ceci inclus les élèves d’éducation coopérative et les enseignants stagiaires.</li>
+				<li>La personne qui reçoit une formation d’un employeur, mais qui, aux termes de la Loi de 2000 sur les normes d’emploi (LNE), n’est pas un employé aux fins de l’application de cette loi du fait que les conditions énoncées au paragraphe 1 (2) de cette loi sont réunies.</li>
+			</ul>
+			<p>Les autres personnes prescrites par règlement qui exécutent un travail ou fournissent des services à un employeur sans rémunération en argent. (À ce jour, personne n'a encore fait l'objet d'une telle prescription dans le cadre de la LSST.)</p>
+			<h5>Le travailleur doit :</h5>
+			<ul>
+				<li>employer ou porter le matériel et les appareils ou vêtements de protection exigés par l’employeur;</li>
+				<li>ne doit pas enlever un appareil de protection exigé par les règlements ou par l’employeur ou empêcher son fonctionnement;</li>
+				<li>ne doit pas jouer des tours, prendre part à des concours, à des tours de force ou à des courses inutiles, ou se conduire de façon violente et turbulente;</li>
+				<li>signaler à l’employeur ou au superviseur toute infraction à la présente loi ou aux règlements;</li>
+				<li>travailler conformément aux dispositions de la présente loi et des règlements.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Internal Responsibility System</h3>
+				{{else}}
+				<h4>Système de responsabilité interne</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<p>The Internal Responsibility System (IRS) is a system where everyone has direct responsibility for health and safety as an essential part of his or her job.</p>
+			<p>Each person takes initiative on health and safety issues and works to solve problems and make improvements on an on-going basis. They do this in cooperation with others. The <strong>JHSC (refer to section: Joint Health & Safety Commitee)</strong> contributes to the success of the <strong>IRS</strong>.</p>
+			<p>A successful IRS should result in progressively longer intervals between accidents or work-related illnesses.</p>
+			{{else}}
+			<p>Le Système de responsabilité interne (SRI) confère à tout  employé une responsabilité directe à l’égard de la santé et  de la sécurité et fait partie des tâches essentielles liées à son poste.</p>
+			<p>Ainsi, chacun doit agir à l’égard des enjeux de santé et  de sécurité et participer à la résolution des problèmes et  à l’amélioration continue en collaboration avec d’autres  intervenants. Le <strong>CMSST (voir section : Comité mixte sur la santé et la sécurité au travail)</strong> veille au succès du <strong>SRI</strong>.</p>
+			<p>Le succès d’un SRI se traduit par des intervalles de plus en plus espacés entre les accidents du travail et les maladies professionnelles.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Direct Responsibilities</h3>
+				{{else}}
+				<h4>Responsabilités directes</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<img src="images/9_direct_responsibilities_graphic.png" width="100%" height="auto" alt="" class="asset-max-width"/>
+			
+			<h5>Internal Resources</h5>
+			<ul>
+				<li>JHSC</li>
+				<li>WHS Team</li>
+			</ul>
+			<h5>External Resources</h5>
+			<ul>
+				<li>SBCI</li>
+				<li>Health and Safety Associations</li>
+				<li>Worker Centre</li>
+				<li>Unions</li>
+				<li>Ministry of Labour</li>
+			</ul>
+			
+			{{else}}
+			<img src="images/9_direct_responsibilities_graphic_fr.png" width="100%" height="auto" alt="" class="asset-max-width"/>
+			
+			<h5>Ressources internes</h5>
+			<ul>
+				<li>Comité mixte</li>
+				<li>Équipe de santé et de sécurité au travail</li>
+			</ul>
+			<h5>Ressources externes</h5>
+			<ul>
+				<li>SBCI</li>
+				<li>Associations en santé et sécurité au travail</li>
+				<li>Centres des travailleurs</li>
+				<li>Syndicats</li>
+				<li>Ministère du Travail</li>
+			</ul>
+			
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Keys to a Successful IRS</h3>
+				{{else}}
+				<h4>Les éléments clés pour un SRI réussie</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Everyone must have a sincere wish to prevent accidents and illnesses.</li>
+				<li>Everyone must accept that accidents and illnesses have causes that can be eliminated or greatly reduced.</li>
+				<li>Everyone must accept that health and safety is part of doing the job.</li>
+				<li>Every person must have a clear understanding of what he/she is responsible for; what he/she can do to change matters; and when things must be done.</li>
+				<li>Everyone must have the capacity to carry out their responsibilities.</li>
+				<li>Everyone must attempt to avoid conflict when trying to reduce risk.</li>
+				<li>Each person must strive to improve work processes to reduce risk.</li>
+				<li>When an individual cannot reduce risk by him or herself, they must strive to improve work processes to reduce risk in cooperation with others.</li>
+				<li>Everyone must take steps to make the IRS process effective at all levels in the organization.</li>
+				<li>No one should be fearful of reprisals when using IRS processes.</li>
+			</ul>
+			{{else}}
+			<ul class="checks">
+				<li>Chacun doit sincèrement vouloir prévenir les accidents et les maladies.</li>
+				<li>Chacun doit reconnaître qu’il est possible d’éliminer ou de réduire les causes des accidents et des maladies.</li>
+				<li>Chacun doit reconnaître que la prévention fait partie intégrante du travail.</li>
+				<li>Chacun doit clairement comprendre ses responsabilités, ce qu’il peut faire pour améliorer une situation et le moment propice pour intervenir.</li>
+				<li>Chacun doit pouvoir assumer ses responsabilités.</li>
+				<li>Chacun doit essayer d’éviter les conflits lors des tentatives pour réduire les risques.</li>
+				<li>Chacun doit s’efforcer d’améliorer les méthodes de travail afin de réduire les risques.</li>
+				<li>Lorsqu’une personne ne peut pas, seule, réduire le niveau de risque, elle doit s’efforcer de collaborer avec d’autres intervenants pour atteindre cet objectif.</li>
+				<li>Chacun doit s’efforcer de contribuer à la réussite du SRI à tous les niveaux de l’organisation.</li>
+				<li>Personne ne doit craindre de représailles pour avoir appliquer le SRI.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		{{/ionContent}}
+	{{/ionView}}
+</template>

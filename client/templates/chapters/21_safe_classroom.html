@@ -1,0 +1,133 @@
+<template name="safe_classroom">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "safe_classroom"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color07">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Creating a Safe Classroom</h3>
+					{{else}}
+					<h4>Instaurer une salle de classe sécuritaire</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color07">
+			{{#if lang_en}}
+			<p>A safe classroom is a secure learning environment that promotes learning and strengthens positive social interactions among students and staff.</p>
+			<p>Educators have considered the emotional needs of the students and carefully planned out the physical space.</p>
+			<h5>How do you create a safe classroom?</h5>
+			<ul>
+				<li>Careful consideration of the needs of your students.</li>
+				<li>A physically safe classroom is one in which:</li>
+				<li class="has-sub"><ul>
+					<li>The educators have been trained to manage behaviour effectively; and,</li>
+					<li>Prevention strategies are practiced and the physical space is carefully planned.</li>
+				</ul></li>
+			</ul>
+			<h5>Who creates a safe classroom?</h5>
+			<ul>
+				<li>School administration</li>
+				<li>Classroom staff</li>
+				<li>Parents and guardians</li>
+				<li>Students (where appropriate)</li>
+				<li>Community agency professionals</li>
+				<li>School board professional staff</li>
+			</ul>
+			<p>Anyone who can contribute positive ideas to the creation of a safe classroom is invited to have input.</p>
+			<p>If the student needs are highly specialized, you will appreciate more input and collaboration from others.</p>
+			{{else}}
+			<p>Une salle de classe sécuritaire, c’est un milieu d’apprentissage exempt de dangers qui favorise l’apprentissage et qui renforce les interactions sociales positives entre les élèves et le personnel.</p>
+			<p>Les éducateurs planifient soigneusement l’aménagement de l’espace, en tenant compte des besoins émotionnels des élèves.</p>
+			<h5>Comment instaurer une salle de classe sécuritaire?</h5>
+			<ul>
+				<li>Tenez compte des besoins de vos élèves avec soin.</li>
+				<li>Une salle de classe sécuritaire implique que :</li>
+				<li class="has-sub"><ul>
+					<li>Les éducateurs sont formés à la gestion efficace du comportement;</li>
+					<li>Les stratégies préventives sont employées et l’aménagement de l’espace, soigneusement planifié.</li>
+				</ul></li>
+			</ul>
+			<h5>Qui est chargé de l’instauration d’une salle de classe sécuritaire?</h5>
+			<ul>
+				<li>La direction de l’école</li>
+				<li>Le personnel enseignant</li>
+				<li>Les élèves (lorsque cela est approprié)</li>
+				<li>Le personnel spécialisé du conseil scolaire</li>
+				<li>Les parents et tuteurs</li>
+				<li>Des professionnels des organismes communautaires</li>
+			</ul>
+			<p>Toute personne ayant des idées positives à l’égard de l’instauration d’une salle de classe sécuritaire.</p>
+			<p>La contribution et la collaboration d’autres personnes seront appréciées, surtout si les besoins de l’élève sont hautement spécialisés.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color07">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Physical Restraint</h3>
+					{{else}}
+					<h4>Moyens de contention</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color07">
+			{{#if lang_en}}
+			<h5>LEGISLATION - Child and Family Services Act</h5>
+			<ul>
+				<li>Physical restraint may only be carried out if there is a clear and imminent risk that the student will physically injure themselves and/or others, never as punishment and only if less intrusive techniques are ineffective.</li>
+				<li>Physical restraint must be carried out using the least amount of force that is necessary.</li>
+				<li>Planned physical restraint may only be carried out by staff members who have received approved training, and it must be part of a student’s IEP or Safety Plan (24).</li>
+				<li>Debrief of staff following the use of physical restraint.</li>
+			</ul>
+			<h5>Criminal Code of Canada</h5>
+			<ul>
+				<li>School staff may use reasonable force to restrain a student if injury to the student or others is imminent, whether the staff member is trained (in cases of planned restraint) or untrained (in unexpected cases of restraint).</li>
+				<li>The test is whether the force used was reasonable and whether the intent of the restraint was to avoid harm/ injury.</li>
+			</ul>
+			{{else}}
+			<h5>LES LOIS - Loi sur les services à l’enfance et à la famille</h5>
+			<ul>
+				<li>Les moyens de contention ne doivent être utilisés qu’en cas de danger imminent et réel qu’un élève se blesse ou blesse autrui. Ils ne sont utilisés que dans les cas où des techniques moins envahissantes s’avèrent inefficaces, et ne servent jamais à punir.</li>
+				<li>Les moyens de contention ne doivent être déployés que par le personnel ayant suivi une formation autorisée et être déployés avec le minimum de force requise.</li>
+				<li>Les moyens de contention planifiés doivent figurer dans le PEI ou le <strong>plan d’intervention de l’élève (24).</strong></li>
+				<li>Une rencontre de retour sur la situation doit avoir lieu avec le personnel concerné à chaque fois qu’un moyen de contention est déployé.</li>
+			</ul>
+			<h5>Code criminel du Canada</h5>
+			<ul>
+				<li>Le personnel scolaire est habilité à déployer un niveau de force raisonnable dans le but de restreindre un élève dans les cas où le risque de blessure pour l’élève ou pour autrui est imminent, que l’employé soit formé (la contention planifiée) ou non formé (la contention imprévue).</li>
+				<li>Le critère d’évaluation est de déterminer si la force utilisée était raisonnable et si l’objectif de la contention était d’éviter des dommages ou des blessures.</li>
+			</ul>
+			{{/if}}
+		</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>

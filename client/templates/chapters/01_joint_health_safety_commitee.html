@@ -1,0 +1,123 @@
+<template name="joint_health_safety_commitee">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "jhsc"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>JHSC: Section 9 Occupational Health and Safety Act (OHSA)</h3>
+				{{else}}
+				<h4>CMSST (article 9) Loi sur la santé et la sécurité au travail (LSST)</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<ul>
+				<li>A Joint Health and Safety Committee (JHSC) is required at workplaces with 20 or more employees.</li>
+				<li>At least half the committee members shall be workers employed at the workplace who do not exercise managerial functions.</li>
+				<li>Committee members who represent the workers are selected by the workers.</li>
+				<li>Two members will be co-chairs, one management and one non-management representative.</li>
+				<li>Two members will be certified, one management and one non-management representative.</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Tout établissement où travaillent au moins 20 employés doit se doter d’un comité mixte sur la santé et la sécurité  au travail.</li>
+				<li>Au moins la moitié des membres du comité doivent être des travailleurs qui n’exercent aucune fonction de gestion au sein de l’entreprise.</li>
+				<li>Les membres du comité qui représentent les travailleurs doivent être choisis par ces derniers.</li>
+				<li>Le comité doit avoir deux coprésidents : l’un représentant l’administration et l’autre, les travailleurs.</li>
+				<li>Deux membres du comité (l’un représentant l’administration et l’autre, les travailleurs) devront être agréés.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>JHSC Functions</h3>
+				{{else}}
+				<h4>Les fonctions du CMSST</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<p>As a principal, be aware of JHSC responsibilities:</p>
+			<h5>Identify hazards</h5>
+			<ul>
+				<li>Conduct workplace inspections.</li>
+				<li>Receive audit reports.</li>
+				<li>Investigate cases where a worker is killed or critically injured at a workplace.</li>
+				<li>Communicate with staff.</li>
+			</ul>
+			<h5>Evaluate hazards</h5>
+			<ul>
+				<li>Analyze hazards.</li>
+				<li>Take advice from experts.</li>
+			</ul>
+			<h5>Recommend improvements to employer</h5>
+			<ul>
+				<li>Write recommendations to employer.</li>
+			</ul>
+			<h5>Follow up on recommendations</h5>
+			<ul>
+				<li>Receive a response from employer within 21 days.</li>
+			</ul>
+			{{else}}
+			<p>La direction de l’école doit se familiariser avec les responsabilités qui incombent au comité mixte.</p>
+			<h5>Identifier les dangers</h5>
+			<ul>
+				<li>Réaliser des inspections sur le lieu de travail.</li>
+				<li>Recevoir les rapports de vérification.</li>
+				<li>Enquêter sur les cas impliquant un décès ou une blessure critique au travail.</li>
+				<li>Communiquer avec le personnel.</li>
+			</ul>
+			<h5>Évaluer les dangers</h5>
+			<ul>
+				<li>Analyser les dangers présents ou potentiels.</li>
+				<li>Demander l’avis d’experts-conseils.</li>
+			</ul>
+			<h5>Recommander des améliorations à l’employeur</h5>
+			<ul>
+				<li>Soumettre des recommandations par écrit.</li>
+			</ul>
+			<h5>Faire le suivi aux recommandations</h5>
+			<ul>
+				<li>Obtenir une réponse de l’employeur dans un délai de 21 jours.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		
+		{{/ionContent}}
+	{{/ionView}}
+</template>

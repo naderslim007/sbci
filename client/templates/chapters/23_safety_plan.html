@@ -1,0 +1,182 @@
+<template name="safety_plan">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "safety_plan"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color07">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Definition</h3>
+					{{else}}
+					<h4>Definition</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color07">
+			{{#if lang_en}}
+			<p>A safety plan is the crisis-response plan implemented by staff in a situation where identified behaviour presents an imminent safety risk. This plan provides strategies for prevention and intervention.</p>
+			{{else}}
+			<p>Le plan d’intervention est l’outil pour les situations de crise lorsqu’un comportement reconnu constitue un risque imminent pour la sécurité. Le plan fournit des stratégies de prévention et d’intervention.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color07">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>What is the purpose of a safety plan?</h3>
+					{{else}}
+					<h4>À quoi sert le plan d’intervention?</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color07">
+			{{#if lang_en}}
+			<p>It provides detailed and clear instructions regarding the strategies that are to be used, by whom, and under what circumstances to prevent injury to staff and students during an incident where a student’s behaviour presents a risk of injury to self and others.</p>
+			{{else}}
+			<p>Le plan fournit des instructions claires et détaillées à l’égard des stratégies à utiliser, précise les personnes habilitées à intervenir et dans quelles circonstances, afin de prévenir une blessure lorsque le comportement d’un élève risque de le blesser ou de blesser autrui.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color07">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Why use a safety plan?</h3>
+					{{else}}
+					<h4>Pourquoi un plan d’intervention?</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color07">
+			{{#if lang_en}}
+			<p>A safety plan is essential for staff and student safety.</p>
+			<p>The OHSA requires that written instructions are in place with respect to the measures and procedures to be taken for staff and student safety where there is a risk of injury.</p>
+			{{else}}
+			<p>Le plan d’intervention est essentiel pour assurer la sécurité du personnel et des élèves.</p>
+			<p>La LSST exige que des instructions écrites concernant les mesures et les procédures à préconiser pour protéger le personnel et les élèves lorsqu’il y a un risque de blessure soient en place.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color07">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Who writes a safety plan?</h3>
+					{{else}}
+					<h4>Qui prépare le plan d’intervention?</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color07">
+			{{#if lang_en}}
+			<p>It is the principal’s duty to ensure an appropriate safety plan is in place where required.</p>
+			<h5>The development is a collaborative effort:</h5>
+			<ul>
+				<li>School administration</li>
+				<li>School board professional staff</li>
+				<li>Classroom staff (teacher, EA, CYW, etc.)</li>
+				<li>Parents/guardian, student</li>
+				<li>Community agency professionals</li>
+			</ul>
+			{{else}}
+			<p>Le devoir de garantir l’instauration d’un plan d’intervention adéquat relève de la direction d’école.</p>
+			<h5>L’élaboration du plan découle d’efforts collectifs :</h5>
+			<ul>
+				<li>Direction d’école;</li>
+				<li>Membres du personnel spécialisé du conseil scolaire;</li>
+				<li>Enseignants, aides-enseignants, service à l’élève, etc.;</li>
+				<li>Parents/tuteurs et élèves;</li>
+				<li>Professionnels d’organismes communautaires.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color07">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Who writes a safety plan?</h3>
+					{{else}}
+					<h4>Que contient un plan d’intervention?</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color07">
+			{{#if lang_en}}
+			<p>It is the principal’s duty to ensure an appropriate safety plan is in place where required.</p>
+			<h5>The development is a collaborative effort:</h5>
+			<ul>
+				<li>School administration</li>
+				<li>School board professional staff</li>
+				<li>Classroom staff (teacher, EA, CYW, etc.)</li>
+				<li>Parents/guardian, student</li>
+				<li>Community agency professionals</li>
+			</ul>
+			{{else}}
+			<p>Le contenu du plan dépend des besoins spécifiques de l’élève et de son comportement.</p>
+			<h5>Les éléments les plus communs qui y figurent :</h5>
+			<ul>
+				<li>Une description du comportement spécifique;</li>
+				<li>Les éventuels déclencheurs du comportement;</li>
+				<li>Les indicateurs de l’imminence du risque de blessure;</li>
+				<li>Les méthodes d’intervention non-physique pour prévenir le comportement;</li>
+				<li>L’identification du personnel ou de l’équipe qui doit intervenir lorsqu’une intervention physique est requise, et la description des techniques d’intervention physique à employer;</li>
+				<li>Les directives pour l’appel au 911;</li>
+				<li>Une description des dispositifs de sécurité ou de l’EPI;</li>
+				<li>Les procédures de communication pendant et après un incident;</li>
+				<li>Le soutien à fournir et le suivi pour le personnel et l’élève après l’incident;</li>
+				<li>La documentation à remplir;</li>
+				<li>Les procédures pour revoir le plan d’intervention.</li>
+			</ul>
+			{{/if}}
+		</div>
+
+		{{/ionContent}}
+	{{/ionView}}
+</template>

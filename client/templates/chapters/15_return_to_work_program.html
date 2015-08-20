@@ -1,0 +1,190 @@
+<template name="return_to_work_program">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "return_to_work_program"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		<div class="content-wrap color04">
+			{{#if lang_en}}
+			<h5>The goal of the Return to Work program is to return the employee, as soon as possible, to work that is:</h5>
+			<ul>
+				<li>Safe for employee, co-workers, and students.</li>
+				<li>Matches employee’s medical precautions to job duties.</li>
+			</ul>
+			<p>Returning to work can be as good as therapy (emotionally and physically).</p>
+			{{else}}
+			<h5>L’objectif du programme de retour au travail est de permettre à l’employé de recommencer à travailler aussitôt que possible dans un lieu de travail qui est :</h5>
+			<ul>
+				<li>Sécuritaire pour lui, ses collègues et les élèves;</li>
+				<li>Conforme aux consignes médicales en ce qui concerne les tâches de l’employé reliées à son poste.</li>
+			</ul>
+			<p>Le retour au travail peut constituer une bonne thérapie, tant sur le plan émotionnel que sur le plan physique.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color04">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>The Employee’s Rights</h3>
+					{{else}}
+					<h4>Les droits de l’employé</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+
+		<div class="content-wrap color04">
+			{{#if lang_en}}
+			<h5>An injured employee is entitled to:</h5>
+			<ul>
+				<li>85% of net salary (non-taxable) income replacement</li>
+				<li>Choose the health-care provider of his or her choice</li>
+				<li>Accommodated work when there are identified medical restrictions</li>
+			</ul>
+			{{else}}
+			<h5>Tout employé blessé :</h5>
+			<ul>
+				<li>Recevra 85 % de son salaire net (non imposable) à titre de remplacement du revenu;</li>
+				<li>Pourra consulter le professionnel de soins de santé de son choix;</li>
+				<li>Bénéficiera du travail accommodé lorsque des restrictions médicales sont établies.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color04">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>The Employee’s Obligations</h3>
+					{{else}}
+					<h4>Les devoirs de l’employé</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+
+		<div class="content-wrap color04">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Keep in regular contact with the immediate supervisor (principal).</li>
+				<li>Co-operate with medical treatment and participate with offers of return to work, or risk losing WSIB benefits.</li>
+				<li>Consent to disclosure of functional abilities information to the employer from the treating health care professional.</li>
+			</ul>
+			{{else}}
+			<ul class="checks">
+				<li>Demeurer en contact régulier avec son superviseur immédiat ou avec sa direction d’école;</li>
+				<li>Coopérer au processus des soins et se montrer ouvert aux offres de retour au travail, ou risquer de perdre ses prestations de la CSPAAT;</li>
+				<li>Consentir à ce que son professionnel de la santé traitant divulgue les renseignements concernant ses capacités fonctionnelles à l’employeur.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color04">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Common Methods of Accommodation</h3>
+					{{else}}
+					<h4>Méthodes communes d’accommodement</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+
+		<div class="content-wrap color04">
+			{{#if lang_en}}
+			<ul>
+				<li>Modifying duties and hours</li>
+				<li>Providing assistive devices: chairs, lighter mops, voice recognition, laptop projectors</li>
+				<li>Providing assistance for tasks the employee cannot do</li>
+				<li>Changing work methods</li>
+				<li>Including task rotation and micro-breaks</li>
+				<li>Transportation</li>
+				<li>Temporary re-assignment</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Modifier les tâches et l’horaire de travail</li>
+				<li>Offrir des appareils fonctionnels : chaises, balais moins lourds, systèmes de reconnaissance de la voix, projecteurs d’ordinateurs portables, etc.</li>
+				<li>Fournir de l’aide pour les tâches que l’employé ne peut pas faire</li>
+				<li>Modifier les méthodes de travail</li>
+				<li>Inclure une rotation des tâches et de courtes pauses</li>
+				<li>Offrir le transport</li>
+				<li>Offrir une réaffectation temporaire</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color04">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Accommodation process</h3>
+					{{else}}
+					<h4>Le processus d’accommodement</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+
+		<div class="content-wrap color04">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Accommodation needs to be identified</li>
+				<li class="has-sub"><ul>
+					<li>An injury and illness—disability</li>
+					<li>Information is provided by way of medical restrictions or functional ability forms.</li>
+				</ul></li>
+				<li>Medical information (HR involvement required)</li>
+				<li>Job review (modifications, etc.)</li>
+				<li>Consultation with all parties</li>
+				<li>Implementation of plan</li>
+				<li>Ongoing review for permanent accommodations</li>
+			</ul>
+			{{else}}
+			<ul class="checks">
+				<li>Cerner les besoins d’accommodement</li>
+				<li class="has-sub"><ul>
+					<li>Blessures et maladies entraînant une incapacité</li>
+					<li>Les renseignements fournis selon les formulaires de restrictions médicales ou de capacité fonctionnelle</li>
+				</ul></li>
+				<li>Renseignement médical (implique l’intervention du service des RH)</li>
+				<li>Examen du poste (ex. : modifications)</li>
+				<li>Consultation de toutes les parties impliquées</li>
+				<li>Mise en oeuvre du plan</li>
+				<li>Révision continue en vue de l’accommodement permanent</li>
+			</ul>
+			{{/if}}
+		</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>

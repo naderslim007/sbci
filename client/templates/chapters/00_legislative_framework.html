@@ -1,0 +1,157 @@
+<template name="legislative_framework">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "legislative_framework"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>{{_ "legislation"}}</h3>
+				{{else}}
+				<h4>{{_ "legislation"}}</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+		{{#if lang_en}}
+		<p>Occupational health and safety at the workplace is governed by this legislation:</p>
+		<ul>
+			<li>Occupational Health and Safety Act (OHSA)</li>
+			<li class="has-sub"><ul>
+				<li>Industrial Regulations</li>
+				<li>Construction Regulations</li>
+				<li>Critical Injuries</li>
+				<li>Designated Substances</li>
+				<li>Violence in the Workplace</li>
+			</ul></li>
+			<li>Criminal Code of Canada</li>
+			<li>Workplace Safety and Insurance Act</li>
+			<li>First Aid Regulation 1101</li>
+			<li>Ontario Fire Code/Building Code</li>
+		</ul>
+		{{else}}
+		<p>Occupational health and safety at the workplace is governed by this legislation:</p>
+		<ul>
+			<li>Loi sur la santé et la sécurité au travail (LSST)</li>
+			<li>
+			<ul>
+				<li>Règlements industriels</li>
+				<li>Règlements sur la construction</li>
+				<li>Blessures critiques</li>
+				<li>Substances désignées</li>
+				<li>Violence dans le milieu de travail</li>
+			</ul>
+			</li>
+			<li>Code criminel du Canada</li>
+			<li>Loi sur la sécurité professionnelle et l’assurance contre les incidents du travail</li>
+			<li>Règlement 1101 sur les premiers soins</li>
+			<li>Code du bâtiment</li>
+			<li>Code de prévention des incendie</li>
+		</ul>
+		{{/if}}
+		</div>
+		
+		
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>{{_ "key_components"}}</h3>
+				{{else}}
+				<h4>{{_ "key_components"}}</h4>
+				{{/if}}
+				
+				
+			</div>
+			<svg class="flag-tip" viewBox="0 0 25 50" width="100%" height="200%" preserveAspectRatio="none">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+		{{#if lang_en}}
+		<p>This app covers components in the legislation related to principals:</p>
+		<ul>
+			<li><strong>Joint Health and Safety Committee</strong>: Refer to OHSA Section 9</li>
+			<li><strong>Employer’s General Duties</strong>: Refer to OHSA Section 25</li>
+			<li><strong>Supervisor’s General Duties</strong>: Refer to OHSA Section 27</li>
+			<li><strong>Employee’s General Duties</strong>: Refer to OHSA Section 28</li>
+			<li><strong>Right to Refuse</strong>: Refer to OHSA Section 43</li>
+		</ul>
+		{{else}}
+		<p>Le présent info-bloc express traite des éléments de lois qui s’adressent aux directions d’écoles :</p>
+		<ul>
+			<li><strong>Comité mixte sur la santé et la sécurité au travail (Voir section CMSST)</strong> : article 9 de la LSST</li>
+			<li><strong>Voir section devoirs de l’employeur</strong> : article 25 de la LSST</li>
+			<li><strong>Voir section devoirs du superviseur</strong> : article 27 de la LSST</li>
+			<li><strong>Voir section devoirs du travailleur</strong> : article 28 de la LSST</li>
+			<li><strong>Voir section refus de travailler</strong> : article 43 de la LSST</li>
+		</ul>
+		{{/if}}
+		</div>
+		
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				
+				{{#if lang_en}}
+				<h3>{{_ "criminal_liability"}}</h3>
+				{{else}}
+				<h4>{{_ "criminal_liability"}}</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+		{{#if lang_en}}
+		<p>Criminal liability (Bill C-45) is federal legislation that amends the Canadian Criminal Code. Bill C-45 became law on March 31, 2004 and is now Section 217.1 in the Criminal Code.</p>
+		<ul>
+			<li>Creates rules for establishing criminal liability of organizations for the acts of their representatives.</li>
+			<li>Establishes a legal duty for all persons “directing the work of others” to take reasonable steps to ensure the safety of workers and the public.</li>
+			<li>Sets out the factors that courts must consider when sentencing an organization.</li>
+			<li>Provides optional conditions of probation that a court may impose on an organization.</li>
+		</ul>
+		{{else}}
+		<p>Le projet de loi C-45 sur la responsabilité pénale est une loi canadienne qui a modifié le Code criminal canadien. Adoptée le 31 mars 2004, elle est devenue l’article 217,1 du Code criminel.</p>
+		<ul>
+			<li>Encadre la responsabilité  pénale des organisations à l’égard des  actions de leurs représentants;</li>
+			<li>Établit l ’obligation juridique de personne qui « dirige le travail d’autrui » de prendre des mesures raisonnables afin d’assurer sécurité des travailleurs et du public;</li>
+			<li>Décrit les facteurs que les tribunaux doivent considérer lors de la  détermination de la peine imposée à  une organisation;</li>
+			<li>Précise les conditions optionnelles de probation que le tribunal pourrait imposer à une organisation.</li>
+		</ul>
+		{{/if}}
+		</div>
+		
+		{{/ionContent}}
+	{{/ionView}}
+</template>

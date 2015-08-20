@@ -1,0 +1,228 @@
+<template name="accident_investigation_steps">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "accident_investigation_steps"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color03">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Step 1: Initial Response</h3>
+					{{else}}
+					<h4>Étape 1 : la réponse initiale</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color03">
+			{{#if lang_en}}
+			<h5>After an accident occurs, the initial responder should:</h5>
+			<ul class="checks">
+				<li>Get treatment for injured individuals.</li>
+				<li>Secure the site.</li>
+				<li>Assure the safety of others.</li>
+				<li>Gather information and evidence.</li>
+				<li>Start completing the School Board Report Form.</li>
+			</ul>
+			{{else}}
+			<h5>Dès qu’un accident se produit, le premier répondant :</h5>
+			<ul class="checks">
+				<li>S’assurer que les personnes blessées sont soignées;</li>
+				<li>Sécurise le site;</li>
+				<li>Assure la sécurité des autres;</li>
+				<li>Collecte des renseignements et des preuves;</li>
+				<li>Commence à remplir le formulaire d’accident du conseil scolaire.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color03">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Step 2: Gathering Information</h3>
+					{{else}}
+					<h4>Étape 2 : la collecte des renseignements</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color03">
+			{{#if lang_en}}
+			<h5>Inspect the accident site and note information such as:</h5>
+			<ul class="checks">
+				<li>Positions of individuals, if possible</li>
+				<li>Housekeeping (10)</li>
+				<li>Equipment and materials</li>
+				<li>Safety devices in use</li>
+				<li>Damage to equipment</li>
+				<li>Maintenance records</li>
+				<li>Position of guards</li>
+				<li>Positions of machinery controls</li>
+				<li>Weather conditions</li>
+				<li>Lighting levels</li>
+				<li>Noise (8)</li>
+				<li>Procedures and rules</li>
+				<li>Photographs and diagrams at the scene</li>
+				<li>Witnesses</li>
+			</ul>
+			{{else}}
+			<h5>Cette étape consiste à inspecter le site de l’accident et à recueillir des renseignements pertinents, par exemple :</h5>
+			<ul class="checks">
+				<li>L’endroit où se trouvaient les personnes impliquées, si possible;</li>
+				<li>L’entretien ménager (10);</li>
+				<li>L’équipement et les matériaux;</li>
+				<li>Dispositif de sécurité utilisé;</li>
+				<li>Tout dommage subi par l’équipement;</li>
+				<li>Les détails du registre d’entretien;</li>
+				<li>Les noms des témoins.</li>
+				<li>La position des gardes de protection;</li>
+				<li>Le contrôle des machines;</li>
+				<li>Les conditions météorologiques;</li>
+				<li>Le niveau de l’éclairage;</li>
+				<li>Le niveau du bruit (8);</li>
+				<li>Les procédures et les règlements;</li>
+				<li>Photos et diagrammes du lieu</li>
+			</ul>
+			{{/if}}
+		</div>
+
+		<div class="ribbon color03">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Step 3: Interview</h3>
+					{{else}}
+					<h4>Étape 3 : l’entrevue</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color03">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Injured person or persons</li>
+				<li>Witnesses</li>
+				<li>Supervisors</li>
+			</ul>
+			<p>The purpose of the interview is to establish an understanding with the involved parties and to obtain, in his or her own words, what happened.</p>
+			{{else}}
+			<ul class="checks">
+				<li>Les blessés</li>
+				<li>Les témoins</li>
+				<li>Les superviseurs</li>
+			</ul>
+			<p>L’objet de l’entrevue est de comprendre ce qui s’est passé et d’obtenir une description des événements dans leurs propres mots.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color03">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Step 4: Analysis and Conclusion</h3>
+					{{else}}
+					<h4>Étape 4 : l’analyse et la conclusion</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color03">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Isolate contributory factors: Would the accident have occurred if this particular factor was not present?</li>
+				<li>Determine why the accident occurred, and likely sequence of events and probable causes.</li>
+				<li>Complete report.</li>
+				<li>Draw conclusions and make recommendations based on key contributing factors and causes.</li>
+				<li>Identify corrective actions timetable for completion.</li>
+			</ul>
+			{{else}}
+			<ul class="checks">
+				<li>Cette étape consiste à : Cerner les facteurs contributifs et demander, pour chacun d’entre eux, si l’accident se serait produit sans sa présence.</li>
+				<li>Établir la raison de l’accident, ses causes et la séquence probable des événements.</li>
+				<li>Compléter le rapport.</li>
+				<li>Tirer les conclusions et faire des recommandations basées sur les facteurs contributifs et les causes principales.</li>
+				<li>Établir un échéancier des mesures correctives.</li>
+			</ul>
+			<p>L’objet de l’entrevue est de comprendre ce qui s’est passé et d’obtenir une description des événements dans leurs propres mots.</p>
+			{{/if}}
+		</div>
+
+		<div class="ribbon color03">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Step 5: Accident Investigation Report</h3>
+					{{else}}
+					<h4>Étape 5 : le rapport de l’enquête sur l’accident</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color03">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Statement of injured or ill employee concerning the accident and injured employee information</li>
+				<li>Witness statements</li>
+				<li>Equipment involved</li>
+				<li>Other factors or contributing causes</li>
+				<li>Corrective action plan</li>
+				<li>Sign-off for completion</li>
+				<li>Tools to aid the process</li>
+			</ul>
+			{{else}}
+			<ul class="checks">
+				<li>Déclarations du travailleur blessé ou malade au sujet de l’accident, ainsi que les renseignements sur l’employé blessé</li>
+				<li>Déclarations des témoins</li>
+				<li>Équipement impliqué</li>
+				<li>Autres facteurs ou causes qui ont contribué à l’accident</li>
+				<li>Plan d’action des mesures correctives</li>
+				<li>Signature d’accord pour terminer le rapport</li>
+				<li>Outil pour faciliter le processus</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		
+		{{/ionContent}}
+	{{/ionView}}
+</template>

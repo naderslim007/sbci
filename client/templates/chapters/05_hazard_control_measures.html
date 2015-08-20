@@ -1,0 +1,251 @@
+<template name="hazard_control_measures">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "hazard_control_measures"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<p>The challenge for schools is to offer science, technology and art activities that are both educationally rewarding and safe.</p>
+			<p>This result can only be achieved through a team effort, involving all of those who set and administer school policies, design and maintain the learning environment, plan and deliver science programs, and select and prepare the materials used.</p>
+			<h5>What is a hazard?</h5>
+			<p><strong>An unsafe condition or practice that could cause an injury or illness to an employee and is preventable.</strong></p>
+			{{else}}
+			<p>Le défi pour les écoles est d’offrir des activités en science, en technologie and en art qui sont à la fois éducationnelles et sécuritaires.</p>
+			<p>Pour y arriver, il est nécessaire d’obtenir l’implication de tous, les personnes qui développent les politiques, qui maintiennent un environnement approprié à l’apprentissage, qui développent et enseignent les programmes de science et choisissent le matériel utilisé.</p>
+			<h5>Qu’est-ce qu’un danger?</h5>
+			<p><strong>Un danger est une condition ou une pratique évitable, qui est susceptible de causer une lésion ou une maladie à un travailleur.</strong></p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color01">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Hazard Classification</h3>
+				{{else}}
+				<h4>La classification des dangers</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<p>Hazards are classified by the danger and type of injury they can cause.</p>
+			
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="100"><strong>Class</strong></td>
+					<td><strong>Description</strong></td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">A (High)</td>
+					<td valign="top" align="left">Potential for critical or disabling injury, loss of life, major structural and equipment damage.</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">B (Medium)</td>
+					<td valign="top" align="left">Potential for injury, illness, or property damage.</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">C (Low)</td>
+					<td valign="top" align="left">Potential for non-disabling injury or non-disruptive property damage.</td>
+				</tr>
+			</table>
+			{{else}}
+			<p>Les dangers sont classifiés selon le risque et le type de lésion qu’ils peuvent causer.</p>
+			
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="100"><strong>Type</strong></td>
+					<td><strong>Description</strong></td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">A (élevé)</td>
+					<td valign="top" align="left">Possibilité d’une blessure critique ou invalidante, de décès ou de dommages importants à l’équipement ou à la structure de l’immeuble.</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">B (moyen)</td>
+					<td valign="top" align="left">Possibilité de maladie, de blessure ou de dommages aux biens immobiliers.</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">C (faible)</td>
+					<td valign="top" align="left">Possibilité de blessure non invalidante ou de dommages non perturbateurs aux biens immobiliers.</td>
+				</tr>
+			</table>
+			{{/if}}
+		</div>
+
+		<div class="ribbon color01">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Types of Hazards</h3>
+				{{else}}
+				<h4>Types de dangers</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			
+			{{#if lang_en}}
+			<ul>
+				<li>Biological (refer to Biological Hazards Section)</li>
+				<li>Chemical (refer to Chemical & Physical Hazards Section)</li>
+				<li>Physical (refer to Chemical & Physical Hazards Section)</li>
+				<li>Ergonomic (refer to Ergonomic Hazards Section)</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Biologiques (voir section Dangers biologiques)</li>
+				<li>Chimiques (voir section Chimiques et physiques)</li>
+				<li>Physiques (voir section Chimiques et physiques)</li>
+				<li>Ergonomiques (voir section Dangers ergonomiques)</li>
+			</ul>
+			{{/if}}
+			
+		</div>
+		
+		<div class="ribbon color01">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Hazard Control Measures</h3>
+				{{else}}
+				<h4>Le contrôle des dangers</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			
+			{{#if lang_en}}
+			<h5>At the source</h5>
+			<ul>
+				<li><strong>Elimination</strong>: Eliminate the hazard (e.g. redesign workstations and work process). Most effective.</li>
+				<li><strong>Substitution</strong>: Substitute less hazardous material.</li>
+				<li><strong>Isolation</strong>: Protects the employee against exposure, but does not eliminate hazards.</li>
+			</ul>
+			<h5>Along the path</h5>
+			<p>If you cannot eliminate, substitute, or isolate the hazard at the source:</p>
+			<ul>
+				<li>Use local or general ventilation.</li>
+				<li>Apply portable barriers and screens.</li>
+				<li>Implement general housekeeping (10) measures.</li>
+			</ul>
+			<h5>At the worker</h5>
+			<p>If you cannot eliminate the hazard, implement:</p>
+			<ul>
+				<li>Administrative Controls</li>
+				<li class="has-sub">
+				<ul>
+					<li>Develop and apply job procedures.</li>
+					<li>Change and adjust work schedules and breaks.</li>	
+				</ul>
+				</li>
+				<li>Supply and ensure the use of Personal Protective Equipment (PPE).</li>
+			</ul>
+			{{else}}
+			<h5>À la source</h5>
+			<ul>
+				<li><strong>Élimination</strong> : le danger est éliminé (par ex : un réaménagement du poste ou des procédures de travail). C’est la démarche la plus efficace.</li>
+				<li><strong>Substitution</strong> : choisir des matériaux moins dangereux.</li>
+				<li><strong>Isolation</strong> : protège le travailleur sans pour autant éliminer les dangers.</li>
+			</ul>
+			<h5>En cours de route</h5>
+			<p>S’il est impossible d’éliminer le danger, de le substituer ou de l’isoler à la source :</p>
+			<ul>
+				<li>Préconisez la ventilation locale ou générale;</li>
+				<li>Utilisez des barrières et des cloisons mobiles;</li>
+				<li>Mettez en oeuvre des démarches globales d’entretien ménager (10).</li>
+			</ul>
+			<h5>Au niveau du travailleur</h5>
+			<p>S’il vous est impossible d’éliminer le danger :</p>
+			<ul>
+				<li>Mettez en oeuvre des contrôles administratifs :</li>
+				<li>
+				<ul>
+					<li>Élaborer et appliquer des procédures à l’égard du poste;</li>
+					<li>Modifier et ajuster les horaires de travail et des pauses;</li>	
+				</ul>
+				</li>
+				<li>Fournissez l’équipement de protection individuel (EPI) et assurez-vous qu’il est utilisé.</li>
+			</ul>
+			{{/if}}
+			
+		</div>
+
+		<div class="ribbon color01">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Controls</h3>
+				{{else}}
+				<h4>Les contrôles</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			
+			{{#if lang_en}}
+			<h5>Engineering controls</h5>
+			<ul>
+				<li>Design-Redesign: Most effective if this is done in the planning stages (e.g. resurfacing the floor to prevent a trip hazard).</li>
+			</ul>
+			<h5>Administrative controls</h5>
+			<ul>
+				<li>Job procedures - change time of day salt and sand of walkways occurs; provide 2 smaller recycle bins instead of one large one to reduce lifting weights</li>
+				<li>Work schedules and breaks - alternate tasks regularly</li>
+				<li>Personal Protective Equipment (PPE) - stealthware jackets, curved handle shovels, lightweight mops</li>
+			</ul>
+			{{else}}
+			<h5>Les mesures d’ingénierie</h5>
+			<ul>
+				<li>Conception et nouvelle conception : cette mesure est plus efficace lors de la planification (ex. : changer la surface d’un plancher afin de prévenir tout risque de trébucher).</li>
+			</ul>
+			<h5>Les mesures administratives</h5>
+			<ul>
+				<li>Les procédures liées au poste - Temps de la journée où l’épandage de sel ou de sable est fait; fournir deux contenants de recyclage plus petits au lieu d’un seul gros.</li>
+				<li>Les horaires du travail et des pauses - Alterner les tâches régulièrement</li>
+				<li>L’équipement de protection individuel (EPI) - pelles avec courbe, des vadrouilles plus légères</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		{{/ionContent}}
+	{{/ionView}}
+</template>

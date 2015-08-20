@@ -1,0 +1,254 @@
+<template name="inspection_protocol">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "inspection_protocol"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color02">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Prepare for inspection</h3>
+					{{else}}
+					<h4>Avant l’inspection</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Prepare a current checklist.</li>
+				<li>Obtain floor plans of area to be inspected.</li>
+				<li>Review prior incidents details and their locations.</li>
+				<li>Review workplace hazards and activities.</li>
+				<li>Review prior inspection reports.</li>
+				<li>Plan inspection route.</li>
+				<li>Notify supervisors.</li>
+				<li>Locate emergency equipment.</li>
+			</ul>
+			{{else}}
+			<ul class="checks">
+				<li>Préparez une liste de contrôle à jour.</li>
+				<li>Obtenez le plan d’étage de la zone à inspecter.</li>
+				<li>Revoyez les zones où des incidents ont eu lieu.</li>
+				<li>Réviser les incidents passés et leurs emplacements.</li>
+				<li>Révisez les rapports d’inspection antérieurs.</li>
+				<li>Planifiez le parcours de l’inspection.</li>
+				<li>Avisez vos supérieurs.</li>
+				<li>Repérez l’emplacement de l’équipement d’urgence.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color02">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Sequence</h3>
+					{{else}}
+					<h4>La séquence</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<h5>Check each area in this sequence:</h5>
+			<ul class="checks">
+				<li>Ceiling</li>
+				<li>Walls</li>
+				<li>Floor</li>
+				<li>High-energy</li>
+				<li>Processes</li>
+			</ul>
+			{{else}}
+			<h5>Faites les vérifications selon la séquence suivante :</h5>
+			<ul class="checks">
+				<li>Les plafonds</li>
+				<li>Les murs</li>
+				<li>Les planchers</li>
+				<li>L’énergie</li>
+				<li>Les pratiques</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color02">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Conduct the inspection</h3>
+					{{else}}
+					<h4>Pendant l’inspection</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Keep to established inspection routes.</li>
+				<li>Spend time in problem areas.</li>
+				<li>Communicate with various departments.</li>
+				<li>Observe equipment and operations.</li>
+				<li>Talk to people but don’t distract.</li>
+				<li>Look at each potential hazard.</li>
+				<li>Describe and locate each hazard.</li>
+				<li>Take action on immediate hazards.</li>
+			</ul>
+			<h5>Use senses to detect hazards:</h5>
+			<ul class="checks">
+				<li><strong>Sight</strong>: hazards, dust, mist, clutter, ergonomic (refer to section Ergonomic Hazards), PPE</li>
+				<li><strong>Hearing</strong>: noise (refer to section Chemical & Physical Hazards), worker complaints, talk to workers</li>
+				<li><strong>Touch</strong>: heat and cold (Refer to section Other Hazards), vibration, sharp, weight</li>
+				<li><strong>Smell</strong>: gas, vapors, odors</li>
+			</ul>
+			{{else}}
+			<ul class="checks">
+				<li>Suivez la séquence de l’inspection prévue.</li>
+				<li>Passez du temps dans les zones problématiques.</li>
+				<li>Communiquez avec les différents services.</li>
+				<li>Observez la machinerie et les opérations.</li>
+				<li>Parlez aux gens sans les distraire.</li>
+				<li>Examinez chaque danger éventuel.</li>
+				<li>Décrivez et localisez chaque danger.</li>
+				<li>Agissez sur les dangers imminents.</li>
+			</ul>
+			<h5>Servez-vous de vos sens pour détecter les dangers :</h5>
+			<ul class="checks">
+				<li><strong>La vue</strong> : les dangers visibles, la poussière, la brume, le désordre, les risques ergonomiques (Voir section Dangers ergonomiques), l’EPI</li>
+				<li><strong>L’ouïe</strong> : le bruit (Voir section Dangers chimiques et physiques), les plaintes des travailleurs, les conversations avec les travailleurs</li>
+				<li><strong>Le toucher</strong> : la chaleur et le froid (Voir section Autres dangers), la vibration, les surfaces coupantes, le poids</li>
+				<li><strong>L’odorat</strong> : les gaz, les vapeurs, les odeurs, etc.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color02">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Report Details</h3>
+					{{else}}
+					<h4>Les détails dans le rapport</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<h5>Report should be detailed and specific:</h5>
+			<ul>
+				<li>Name of Facility</li>
+				<li>Location</li>
+				<li>Name(s) of Inspector(s)</li>
+				<li>Area of hazard</li>
+				<li>Observation</li>
+				<li>Hazard</li>
+				<li>Recommended corrective action</li>
+				<li>Signatures</li>
+			</ul>
+			{{else}}
+			<h5>Les rapports doivent être détaillés et spécifiques :</h5>
+			<ul>
+				<li>Le nom du site</li>
+				<li>L’adresse du site</li>
+				<li>Le nom des inspecteurs</li>
+				<li>La zone où un danger a été constaté</li>
+				<li>Les observations</li>
+				<li>Le type de danger décelé</li>
+				<li>Les mesures correctives recommandées</li>
+				<li>Les signatures requises</li>
+			</ul>
+			{{/if}}
+		</div>
+
+		<div class="ribbon color02">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Follow-up</h3>
+					{{else}}
+					<h4>Le suivi</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<p>Follow-up is usually the responsibility of an assigned individual with authority to implement recommendations.</p>
+			<p>Formal recommendations are made by the JHSC (Refer to section Joint Health & Safety Committee), including an action timetable, or reasons why no action is taken. The employer has 21 days to respond.</p>
+			<p>Once corrective measures are implemented, review for effectiveness of the 
+control measures over a specific time.</p>
+			{{else}}
+			<p>Le suivi incombe généralement à une personne autorisée à mettre en oeuvre les recommandations.</p>
+			<p>Toute recommandation formelle est faite par le CMSST (Voir section Comité mixte sur la santé et la sécurité au travail). L’employeur doit répondre dans un délai de 21 jours.</p>
+			<p>Une fois les mesures correctives mises en oeuvre, contrôlez leur niveau d’efficacité sur une durée de temps spécifique.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color02">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Analysis</h3>
+					{{else}}
+					<h4>Analyse</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<p>Review and revise the inspection process to ensure workplace inspections are effective.</p>
+			{{else}}
+			<p>Examinez le processus d’inspection du lieu de travail et modifiez-le au besoin pour garantir son efficacité.</p>
+			{{/if}}
+		</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>

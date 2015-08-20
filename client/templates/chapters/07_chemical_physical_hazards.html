@@ -1,0 +1,183 @@
+<template name="chemical_physical_hazards">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "chemical_physical_hazards"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<p>Science, technology, and art activities must be conducted in a safe way.</p>
+			<p>This result can only be achieved through a team effort, involving all of those who set and administer school policies, design and maintain the learning environment, plan and deliver science programs, and select and prepare the materials used.</p>
+			<h5>Noise</h5>
+			<p>Workplace exposure limits for noise are generally given as the maximum duration of exposure for various noise levels.</p>
+			{{else}}
+			<p>Les activités scientifiques, technologiques et artistiques doivent être réalisées de façon sécuritaire.</p>
+			<p>Le résultat escompté ne peut être obtenu que par des efforts d’équipe impliquant toutes les personnes qui établissent et gèrent les politiques scolaires, conçoivent et entretiennent le milieu d’apprentissage, planifient et enseignent les programmes de science et choisissent et préparent les matériaux utilisés.</p>
+			<h5>Le bruit</h5>
+			<p>D’une manière générale, les limites d’exposition au bruit sont fixées par la durée maximale d’exposition en fonction d’un niveau de décibels donné.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color01">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>How much noise is too much?</h3>
+					{{else}}
+					<h4>Le bruit : quant est-il trop fort?</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="240"><strong>Noise Source</strong></td>
+					<td><strong>dB(A) </strong></td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Rock Concert</td>
+					<td valign="top" align="left">115</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">iPhone music with ear buds</td>
+					<td valign="top" align="left">105</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Motorcycle</td>
+					<td valign="top" align="left">100</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Power lawn mower at 1m</td>
+					<td valign="top" align="left">92</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Hair dryer</td>
+					<td valign="top" align="left">75</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Conversation at 1m</td>
+					<td valign="top" align="left">60</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Quiet room</td>
+					<td valign="top" align="left">40</td>
+				</tr>
+			</table>
+			<h5>Ontario Noise Limit</h5>
+			<p><strong>The current Ontario limit is 85 dB(A) per 8-hour shift.</strong></p>
+			
+			{{else}}
+			
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="240"><strong>Source</strong></td>
+					<td><strong>dB</strong></td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Concert rock</td>
+					<td valign="top" align="left">115</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Musique sur iPhone avec écouteurs</td>
+					<td valign="top" align="left">105</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Motocyclette</td>
+					<td valign="top" align="left">100</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Mototondeuse (à 1 mètre)</td>
+					<td valign="top" align="left">92</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Séchoir à cheveux</td>
+					<td valign="top" align="left">75</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Conversation at 1m</td>
+					<td valign="top" align="left">60</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Salle calme</td>
+					<td valign="top" align="left">40</td>
+				</tr>
+			</table>
+			<h5>Limite admissible d’exposition au bruit en Ontario</h5>
+			<p><strong>La limite actuelle en Ontario est de 85 dB par quart de travail de huit heures.</strong></p>
+			{{/if}}
+		</div>
+			
+		<div class="ribbon color01">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Due Diligence Checklist</h3>
+					{{else}}
+					<h4>Liste de contrôle de diligence raisonnable</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Lock Out/Tag Out procedures are in place and relevant staff members have received training.</li>
+				<li>Machine and equipment guarding is effective and well maintained.</li>
+				<li>Regular scheduled maintenance is up to date on equipment.</li>
+				<li>Adequate Personal Protective Equipment (PPE) is available.</li>
+				<li>Safety Data Sheets are current and readily available.</li>
+				<li>Flammable and combustible materials are kept contained and covered.</li>
+				<li>Chemical inventories are documented and controlled.</li>
+				<li>Adequate ventilation and exhaust systems are in place.</li>
+				<li>Smoke detectors are in good working order.</li>
+				<li>Emergency numbers are visibly posted.</li>
+				<li>Equipment safety procedures are posted.</li>
+				<li>There is a log confirming staff or students have been trained in the use of the equipment.</li>
+				<li>Emergency-exit access is free of clutter.</li>
+			</ul>
+			{{else}}
+			<ul class="checks">
+				<li>Les procédures de verrouillage et d’étiquetage sont en place et le personnel concerné a reçu la formation requise.</li>
+				<li>Les inventaires de produits chimiques sont documentés et contrôlés.</li>
+				<li>La protection des machines et des équipements est efficace et bien entretenue.</li>
+				<li>Des systèmes adéquats de ventilation et d’échappement sont en place.</li>
+				<li>L’entretien régulier des machines est fait comme prévu.</li>
+				<li>Les détecteurs de fumée sont en bon état de marche.</li>
+				<li>L’équipement de protection individuel (EPI) adéquat est disponible.</li>
+				<li>Les numéros de téléphone d’urgence sont affichés visiblement.</li>
+				<li>Les fiches de données de sécurité (FDS) sont à jour et facilement accessibles.</li>
+				<li>Les procédures sur l’utilisation sécuritaire des machines sont affichées.</li>
+				<li>Les substances inflammables et combustibles sont gardées dans des contenants fermés.</li>
+				<li>Un registre confirmant la formation du personnel et des élèves sur de l’utilisation des équipements est tenu.</li>
+				<li>Les sorties d’urgence ne sont pas encombrées.</li>
+			</ul>
+			{{/if}}
+		</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>

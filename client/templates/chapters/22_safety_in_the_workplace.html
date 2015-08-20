@@ -1,0 +1,121 @@
+<template name="safety_in_the_workplace">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "safety_in_the_workplace"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color07">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Roles and Responsibilities</h3>
+					{{else}}
+					<h4>Instaurer une salle de classe sécuritaire</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color07">
+			{{#if lang_en}}
+			<h5>Principals</h5>
+			<ul class="checks">
+				<li>Ensure an appropriate assessment of the student’s needs and strengths is conducted if necessary.</li>
+				<li>Ensure IEP and safety plan are in place and readily available.</li>
+				<li>Ensure that the appropriate staff (casual included) are aware of the safety plan (24).</li>
+				<li>Arrange for intervention training as required.</li>
+				<li>Report all serious incidents resulting in medical aid or lost time using the applicable Incident Investigation Report form.</li>
+				<li>Complete a monthly “Staff Safety Minor Incident Checklist” and forward to the internal H&S department, if applicable.</li>
+			</ul>
+			
+			<h5>Teachers</h5>
+			<ul class="checks">
+				<li>Participate in the development of the safety plan and IEP.</li>
+				<li>Implement and communicate the safety plan and IEP.</li>
+				<li>Report all incidents to the principal.</li>
+			</ul>
+
+			<h5>Educational assistants</h5>
+			<ul class="checks">
+				<li>Participate in the development of the safety plan and IEP.</li>
+				<li>Monitor, evaluate and communicate the safety plan and IEP on an ongoing basis.</li>
+				<li>Report all incidents to the teacher and principal.</li>
+			</ul>
+
+			<h5>OH&S</h5>
+			<ul class="checks">
+				<li>Provide assistance to the school/site as needed.</li>
+				<li>Evaluate the process annually.</li>
+				<li>Provide Personal Protective Equipment as required.</li>
+				<li>Inform the JHSC (2) of incidents.</li>
+				<li>Track and analyze incidents concerning aggression.</li>
+				<li>Assist with training facilitation.</li>
+			</ul>
+
+			<h5>Parents / Legal guardians</h5>
+			<ul class="checks">
+				<li>Participate in the development, implementation and ongoing communication of IEP, incident reporting and safety plan.</li>
+			</ul>
+
+			{{else}}
+			<h5>Directions d’école</h5>
+			<ul class="checks">
+				<li>S’assurer qu’une évaluation adéquate des besoins et des forces de l’élève est réalisée, si requise.</li>
+				<li>S’assurer que le Plan d’enseignement individualisé et de sécurité de l’élève est développé et qu’il est facilement accessible.</li>
+				<li>Vérifier que le personnel concerné (y compris les employés occasionnels) est au courant du plan d’intervention (24).</li>
+				<li>Organiser toute formation pertinente en matière d’intervention.</li>
+				<li>Déclarer tout incident grave qui nécessite des soins médicaux ou qui entraîne du temps perdu sur le formulaire applicable rapport d’accident.</li>
+				<li>Remplir une liste de contrôle mensuelle des incidents mineurs et la faire parvenir au service des ressources humaines, si applicable.</li>
+			</ul>
+			
+			<h5>Enseignants</h5>
+			<ul class="checks">
+				<li>Collaborer à l’élaboration des plans d’intervention et PEI.</li>
+				<li>Mettre en oeuvre et communiquer aux personnes concernées les plans d’intervention et PEI.</li>
+				<li>Déclarer tous les incidents à la direction d’école.</li>
+			</ul>
+
+			<h5>Aides-enseignants</h5>
+			<ul class="checks">
+				<li>Collaborer à l’élaboration des plans d’intervention et PEI.</li>
+				<li>Suivre les consignes des plans d’intervention et PEI et faire part au superviseur lorsque des lacunes sont détectées dans ces plans.</li>
+				<li>Déclarer tous les incidents à l’enseignant et à la direction d’école.</li>
+			</ul>
+
+			<h5>Service de santé et sécurité au travail</h5>
+			<ul class="checks">
+				<li>Fournir toute aide requise à l’école.</li>
+				<li>Évaluer le processus annuellement.</li>
+				<li>Fournir tout équipement de protection individuel requis.</li>
+				<li>Informer le CMSST (2) de tout incident.</li>
+				<li>Contrôler et analyser tout incident impliquant une agression.</li>
+				<li>Aider à faciliter la formation.</li>
+			</ul>
+
+			<h5>Parents / Tuteurs</h5>
+			<ul class="checks">
+				<li>Participer à l’élaboration, à la mise en oeuvre et à la communication continue des plans d’enseignement individualisé et d’intervention et à la déclaration des incidents.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		{{/ionContent}}
+	{{/ionView}}
+</template>

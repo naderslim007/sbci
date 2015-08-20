@@ -1,0 +1,66 @@
+<template name="workplace_posting_requirements">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "workplace_posting_requirements"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Required Postings</h3>
+				{{else}}
+				<h4>Commentaires requis</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<p>In order for workers to know their rights, employers are required by law to post certain documents.</p>
+			<p>Posters sold by private companies DO NOT COMPLY with the requirements of the Employment Standards Act, 2000 (ESA) or the Occupational Health and Safety Act (OHSA) or the Workplace Safety and Insurance Act, 1997 (WSIA).</p>
+			<ul>
+				<li>The most recent version of the Minister of Labour's poster, "Employment Standards in Ontario"</li>
+				<li>Health & Safety at Work: Prevention Starts Here poster</li>
+				<li>Occupational Health and Safety Act</li>
+				<li>Health and Safety Policy – reviewed annually</li>
+				<li>Workplace Violence and Workplace Harassment Policies – reviewed annually</li>
+				<li>Joint Health and Safety Committees Members</li>
+				<li>In Case of Injury Poster (Form 82)</li>
+			</ul>
+			{{else}}
+			<p>Afin que les travailleurs connaissent bien leurs droits, la loi exige maintenant que les employeurs affichent certains documents.</p>
+			<p>Les affiches vendues par les compagnies privées NE RENCONTRENT PAS les exigences de la Loi de 2000 sur les normes d’emploi, ni de la Loi sur la santé et la sécurité au travail (LSST), ni de la Loi 1997 sur la sécurité professionnelle et l’assurance contre les accidents du travail (LSPAAT).</p>
+			<ul>
+				<li>La plus récente version de l’affiche du ministère du Travail, « Affiche sur les normes d’emploi en Ontario »</li>
+				<li>Santé et sécurité au travail : La prévention commence ici</li>
+				<li>Loi sur la santé et la sécurité au travail</li>
+				<li>Politique de santé et de sécurité – révisée annuellement</li>
+				<li>Politiques sur la Violence au travail et celle sur le Harcèlement au travail – révisées annuellement</li>
+				<li>Membres des Comités mixtes de santé et de sécurité au travail</li>
+				<li>En cas de lésion au travail  (Formulaire 82)</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		{{/ionContent}}
+	{{/ionView}}
+</template>

@@ -1,0 +1,301 @@
+<template name="workplace_inspections">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "workplace_inspections"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color02">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>A Workplace Inspection</h3>
+					{{else}}
+					<h4>L’inspection du lieu de travail</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Identify and record actual and potential hazards.</li>
+				<li>Recommend corrective action for hazards requiring immediate attention.</li>
+				<li>Ensure existing standards and procedures are met.</li>
+			</ul>
+			
+			{{else}}
+			<ul class="checks">
+				<li>Relevez et enregistrez tous les dangers observés et possibles.</li>
+				<li>Recommandez l’action requise pour corriger tout danger nécessitant une action immédiate.</li>
+				<li>Vérifiez la conformité aux normes et aux procédures en vigueur.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+				<div class="ribbon color02">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Science, Technology and Art</h3>
+					{{else}}
+					<h4>Sciences, technologie et arts</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<ul>
+				<li>Ensure Lock Out/Tag Out procedures are in place and relevant staff members have received training.</li>
+				<li>Ensure machine and equipment guarding is effective and well maintained.</li>
+				<li>Ensure regular scheduled maintenance is up to date on equipment.</li>
+				<li>Ensure adequate Personal Protective Equipment (PPE) is available.</li>
+				<li>Ensure SDS are current and readily available.</li>
+				<li>Ensure flammables and combustibles are kept contained and covered.</li>
+				<li>Ensure chemical inventories are documented and controlled.</li>
+				<li>Ensure adequate ventilation and exhaust systems.</li>
+				<li>Ensure smoke detectors are in good working order.</li>
+				<li>Ensure emergency numbers are visibly posted.</li>
+			</ul>
+			
+			{{else}}
+			<ul>
+				<li>S’assurer que les procédures de verrouillage sont en place et que le personnel intéressé a reçu la formation.</li>
+				<li>S’assurer que les gardes des machines et de l’équipement sont efficaces et bien entretenus.</li>
+				<li>S’assurer que l’horaire d’entretien est à jour pour l’équipement.</li>
+				<li>S’assurer que l’équipement de protection individuel (ÉPI) est adéquat et disponible.</li>
+				<li>S’assurer que les FDS sont à jour et facilement disponibles.</li>
+				<li>S’assurer que les matières inflammables et combustibles sont gardées dans des contenants appropriés, couverts et loin de sources de chaleur.</li>
+				<li>S’assurer que l’inventaire des produits chimiques est documenté et contrôlé.</li>
+				<li>S’assurer que les hottes et le système de ventilation sont adéquats.</li>
+				<li>S’assurer que les détecteurs de fumées sont en bonnes conditions.</li>
+				<li>S’assurer que les numéros d’urgence sont bien en vue.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color02">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Your role in a workplace inspection</h3>
+					{{else}}
+					<h4>Votre rôle à l’égard des inspections du lieu de travail</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<ul class="boxes">
+				<li>Monitor the effectiveness of the H&S program.</li>
+				<li>Ensure existing controls are effective.</li>
+				<li>Assist the JHSC (Refer to section Joint Health & Safety Commitee) in making recommendations.</li>
+			</ul>
+			{{else}}
+			<ul class="boxes">
+				<li>Contrôlez l’efficacité du programme de santé et sécurité.</li>
+				<li>Assurez-vous que les contrôles existants fonctionnent correctement.</li>
+				<li>Aidez le CMSST (Voir section Comité mixte sur la santé et la sécurité au travail) à faire ses recommandations.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color02">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Communication</h3>
+					{{else}}
+					<h4>Communication</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<p>You must clearly communicate to the entire workforce the purpose of having workplace inspections.</p>
+			<p>A workplace inspection is not intended to assign blame, but to discover where and why there are hazards, and what action can be taken to eliminate the risks.</p>
+			{{else}}
+			<p>Vous devez communiquer clairement l’objet des inspections sur le lieu de travail à l’ensemble du personnel.</p>
+			<p>L’intention de l’inspection du lieu de travail n’est pas de blâmer, mais de repérer les dangers, de les comprendre et de décider des actions à entreprendre afin de les liminer.</p>
+			{{/if}}
+		</div>
+
+		<div class="ribbon color02">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Who inspects?</h3>
+					{{else}}
+					<h4>Qui inspecte?</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<p>A worker and management member can inspect together. Committee members are not required to designate the same person to perform all inspections.</p>
+			{{else}}
+			<p>Un_travailleur et un superviseur sont habilités à réaliser des inspections conjointes. Le comité mixte n’est pas tenu de toujours affecter la même personne aux inspections.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color02">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>When to inspect?</h3>
+					{{else}}
+					<h4>Quand faire une inspection?</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<p>A member shall inspect the physical condition of the workplace at least once a month, unless otherwise required by the regulations, or an order by an inspector.</p>
+			<p>If this is impractical, the member shall inspect the physical condition of the workplace at least once a year, inspecting at least a part of the workplace each month. Post an established inspection schedule.</p>
+			{{else}}
+			<p>À moins que les règlements ou un inspecteur n’établissent une fréquence différente, la condition physique du lieu de travail sera inspectée au moins une fois par mois.</p>
+			<p>Toutefois, si cela s’avère impossible, la condition physique du lieu de travail sera inspectée globalement une fois l’an, et partiellement chaque mois. L’horaire des inspections doit être affiché.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color02">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Types of inspections</h3>
+					{{else}}
+					<h4>Types d’inspections</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Spot inspections</li>
+				<li>New equipment inspections</li>
+				<li>Planned inspections</li>
+				<li class="has-sub">
+					<ul>
+						<li>Deliberate, thorough and systematic by design.</li>
+						<li>Can involve checklists, a formal reporting process, and document retention.</li>
+					</ul>
+				</li>
+				<li>Informal inspections</li>
+				<li class="has-sub">
+					<ul>
+						<li>Does not conform to set schedules, plans or checklists.</li>
+						<li>Conducted by employees as part of their responsibilities.</li>
+						<li>Record a hazard or unsafe act, correct it immediately or submit a report to initiate corrective action.</li>
+						<li>The reporting process is often verbal.</li>
+					</ul>
+				</li>
+				<li>Pre-operation checks of special equipment</li>
+				<li class="has-sub">
+					<ul>
+						<li>Ladders, circle check</li>
+					</ul>
+				</li>
+				<li>Critical parts inspections</li>
+				<li class="has-sub">
+					<ul>
+						<li>Hoists, guards, basketball net hoists</li>
+					</ul>
+				</li>
+			</ul>
+			{{else}}
+			<ul class="checks">
+				<li>L’inspection spontanée</li>
+				<li>L’inspection des nouveaux équipements</li>
+				<li>L’inspection planifiée</li>
+				<li class="has-sub">
+					<ul>
+						<li>Délibérée, minutieuse et systématique.</li>
+						<li>Peut intégrer une liste de contrôle, une démarche de déclaration formelle et la conservation de documents.</li>
+					</ul>
+				</li>
+				
+				<li>L’inspection informelle</li>
+				<li class="has-sub">
+					<ul>
+						<li>Échappe aux horaires, aux prévisions et aux listes de contrôle.</li>
+						<li>Est menée par des employés selon leurs responsabilités.</li>
+						<li>Consiste à documenter tout danger ou action dangereuse, à les corriger sans tarder ou à soumettre un rapport pour démarrer le processus des mesures correctives.</li>
+						<li>Comprend souvent un processus de déclaration verbale.</li>
+					</ul>
+				</li>
+				
+				
+				
+				
+				<li>La vérification de l’équipement avant son utilisation</li>
+				<li class="has-sub">
+					<ul>
+						<li>Échelles, outils</li>
+					</ul>
+				</li>
+				
+				<li>L’inspection de pièces critiques</li>
+				<li class="has-sub">
+					<ul>
+						<li>Monte-charge, gardes de protection, levier de paniers de basket-ball</li>
+					</ul>
+				</li>
+			</ul>
+			{{/if}}
+		</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>

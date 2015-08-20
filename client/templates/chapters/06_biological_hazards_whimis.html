@@ -1,0 +1,160 @@
+<template name="biological_hazards_whimis">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "biological_hazards"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<h5>Micro-organisms: Viruses, bacteria, mould, fungi</h5>
+			<ul>
+				<li>Germs are passed through breathing, coughing, sneezing, bleeding, leaking body fluids or excretions, and can enter your body through breaks, cuts or scrapes in skin, bites, through mucous membranes, inhalation, eating, sexual activity.</li>
+				<li>Germs can come from objects, animals, food, water, insects, soil.</li>
+			</ul>
+			{{else}}
+			<h5>Microorganismes : virus, bactéries, moisissures et champignons</h5>
+			<ul>
+				<li>Transmis en respirant, en toussant, en éternuant et par les saignements, les liquides corporels et les excrétions, ils envahissent le corps à travers les éraflures, les coupures et les ouvertures de la peau, par les muqueuses, les voies respiratoires, en mangeant et par les activités sexuelles.</li>
+				<li>Les microbes se retrouvent dans les aliments, l’eau et le sol ainsi que sur les objets, les animaux et les insectes.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color01">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Controls</h3>
+				{{else}}
+				<h4>Contrôler ces dangers</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Break the chain of infection.</li>
+				<li>Always assume you are at risk.</li>
+				<li>Keep immunizations up to date.</li>
+				<li>Always cover your mouth when sneezing and coughing with your arm or elbow.</li>
+				<li>Practice effective hand washing.</li>
+				<li>Do not come to work sick.</li>
+				<li>Protect yourself; use precautions.</li>
+			</ul>
+			{{else}}
+			<ul class="checks">
+				<li>Brisez la chaîne de l’infection.</li>
+				<li>Présumez toujours l’existence du danger.</li>
+				<li>Assurez-vous que les vaccins sont à jour.</li>
+				<li>Couvrez-vous toujours la bouche en toussant ou en éternuant avec votre bras, coude ou avec un mouchoir.</li>
+				<li>Encouragez la pratique de se laver les mains régulièrement</li>
+				<li>Ne vous présentez pas au travail lorsque vous êtes malade.</li>
+				<li>Protégez-vous et prenez des précautions.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color01">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Due Diligence Checklist</h3>
+				{{else}}
+				<h4>Liste de contrôle de Diligence</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<ul class="boxes">
+				<li>Biological inventories are documented and controlled.</li>
+				<li>Access to all potentially contaminated areas.</li>
+				<li>Adequate cleaning materials for buildings and equipment.</li>
+				<li>Keep training up to date in cleaning and sanitation methods.</li>
+			</ul>
+			{{else}}
+			<ul class="boxes">
+				<li>Documentez et contrôlez l’inventaire des produits biologiques.</li>
+				<li>Contrôlez l’accès aux zones possiblement contaminées.</li>
+				<li>Assurez la disponibilité des produits de nettoyage adéquats destinés aux équipements et aux immeubles.</li>
+				<li>Assurez que la formation sur les méthodes de nettoyage et d’hygiène est à jour.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color01">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Globally Harmonized System (GHS)</h3>
+				{{else}}
+				<h4>Système général harmonisé (SGH)</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<p><strong>GHS - Globally Harmonized System</strong>, is designed for the classification and labelling of chemical products. It classifies and defines chemical hazards, and provides health and safety information on labels and (SDS) safety data sheets. The same rules, content and format will be utilized and adopted around the world. Workers must participate in training, identify and control hazards and take steps for the protection of themselves and co-workers. Employers/Supervisors must educate and train workers, ensure proper labelling, provide access to up-to-date SDSs and ensure the health and safety of workers.</p>
+			<h5>GHS Pictograms</h5>
+			
+			<p><img src="images/ghs_pictograms/flame.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Flammable</p>
+			<p><img src="images/ghs_pictograms/corrosion.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Corrosive</p>
+			<p><img src="images/ghs_pictograms/exploding_bomb.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Explosive</p>
+			<p><img src="images/ghs_pictograms/gas_cylinder.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Compressed Gas</p>
+			<p><img src="images/ghs_pictograms/flame_over_circle.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Oxidizing Materials</p>
+			<p><img src="images/ghs_pictograms/skull_and_crossbones.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Toxic Materials</p>
+			<p><img src="images/ghs_pictograms/health_hazard.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Health Hazard</p>
+			<p><img src="images/ghs_pictograms/exclamation_mark.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Harmful / Irritant</p>
+			<p><img src="images/ghs_pictograms/environmental_danger.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Dangerous for the Environment</p>
+			<p><img src="images/ghs_pictograms/biohazardous_infectious_materials.gif" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Biohazardous Infectious Materials</p>
+			{{else}}
+			
+			<p>SGH - Système général harmonisé, est conçu pour la classification et l'étiquetage des produits chimiques. Elle classe et définit les risques chimiques et fournit des informations en santé et sécurité sur les étiquettes et les fiches de données de sécurité (FDS). Les mêmes règles, le contenu et le format seront utilisées et adoptées dans le monde entier. Les travailleurs doivent participer à la formation sur l’identification, le contrôle des risques et sur les mesures pour se protéger et protéger ses collègues. Les employeurs / superviseurs doivent éduquer et de former les travailleurs, assurer un étiquetage, donner accès à la mise à jour des FDS et assurer la santé et la sécurité des travailleurs.</p>
+			<h5>Pictogrammes SGH</h5>
+			
+			<p><img src="images/ghs_pictograms/flame.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Inflammable</p>
+			<p><img src="images/ghs_pictograms/corrosion.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Corrosif</p>
+			<p><img src="images/ghs_pictograms/exploding_bomb.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Explosif</p>
+			<p><img src="images/ghs_pictograms/gas_cylinder.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Gaz comprimé</p>
+			<p><img src="images/ghs_pictograms/flame_over_circle.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Oxyder les matières que</p>
+			<p><img src="images/ghs_pictograms/skull_and_crossbones.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Matières toxiques</p>
+			<p><img src="images/ghs_pictograms/health_hazard.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Danger pour la santé</p>
+			<p><img src="images/ghs_pictograms/exclamation_mark.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Nocif / Irritant</p>
+			<p><img src="images/ghs_pictograms/environmental_danger.png" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Dangereux pour l'environnement</p>
+			<p><img src="images/ghs_pictograms/biohazardous_infectious_materials.gif" alt="image1" width="100" height="100" style="vertical-align: middle"/>&nbsp;&nbsp;Les substances biologiques dangereuses</p>
+			{{/if}}
+		</div>
+
+		{{/ionContent}}
+	{{/ionView}}
+</template>

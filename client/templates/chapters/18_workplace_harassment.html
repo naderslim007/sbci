@@ -1,0 +1,66 @@
+<template name="workplace_harassment">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "workplace_harassment"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		<div class="ribbon color05">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Definition</h3>
+					{{else}}
+					<h4>Définition</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color05">
+			{{#if lang_en}}
+			<p>The Occupational Health and Safety Act defines workplace harassment as <strong>engaging in a course of vexatious comment or conduct against a worker, in a workplace – behaviour that is known or ought reasonably to be known to be unwelcome</strong> [Section 1].</p>
+			<p>Workplace harassment can involve unwelcome words or actions that are known or should be known to be offensive, embarrassing, humiliating or demeaning to a worker or group of workers. It can also include behaviour that intimidates, isolates or even discriminates against the targeted individual(s).</p>
+			<p>Workplace harassment often involves repeated words or actions, or a pattern of behaviours, against a worker or group of workers in the workplace that are unwelcome.</p>
+			<h5>Examples of workplace harassment may include:</h5>
+			<ul>
+				<li>Making remarks, jokes or innuendos that demean, ridicule, intimidate, or offend</li>
+				<li>Displaying or circulating offensive pictures or materials in print or electronic form</li>
+				<li>Bullying</li>
+				<li>Repeated offensive or intimidating phone calls or e-mails</li>
+				<li>Inappropriate sexual touching, advances, suggestions or requests</li>
+			</ul>
+			{{else}}
+			<p>La Loi sur la santé et la sécurité au travail définit le harcèlement en milieu de travail comme se livrant à un cours de commentaire vexatoire ou conduite contre un travailleur, dans un lieu de travail - un comportement qui est connu ou devrait raisonnablement être reconnu comme importun [Section 1].</p>
+			<p>Le harcèlement au travail peut impliquer des mots ou des actions qui sont connus ou devraient être connus pour être offensant, embarrassant, humiliant ou dégradant pour un travailleur ou groupe de travailleurs indésirables. Il peut également inclure le comportement qui intimide isolats ou même une discrimination contre l'individu (s) ciblé.</p>
+			<p>Le harcèlement au travail implique souvent des mots ou des actions répétées, ou un modèle de comportements, contre un travailleur ou un groupe de travailleurs dans le milieu de travail qui sont importuns.</p>
+			<h5>Exemples de harcèlement au travail :</h5>
+			<ul>
+				<li>Tyranniser ou persécuter quelqu'un;</li>
+				<li>Intimider quelqu'un ou faire des blagues ou des insinuations malveillantes;</li>
+				<li>Montrer ou faire circuler des photos ou des textes insultants;</li>
+				<li>Faire des appels téléphoniques malveillants ou intimidants;</li>
+				<li>Attouchements sexuels inappropriés, avances, suggestions ou demandes de nature sexuelle.</li>
+			</ul>
+			{{/if}}
+		</div>
+
+		
+		{{/ionContent}}
+	{{/ionView}}
+</template>

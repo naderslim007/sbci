@@ -1,0 +1,172 @@
+<template name="supervisory_leadership">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "supervisory_leadership"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<p>As a supervisor, you are required to follow policies and practices and act as an example of safe behaviour.</p>
+			{{else}}
+			<p>En tant que superviseur, vous devez suivre un certain nombre de politiques et de pratiques et montrer l’exemple en matière de comportement sécuritaire.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Promote Safety Awareness</h3>
+				{{else}}
+				<h4>Promouvoir le sens de la prudence</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<ul>
+				<li>Ensure inspections and follow-up are completed (timely).</li>
+				<li>Visit site regularly.</li>
+				<li>Ensure building safety.</li>
+				<li>Ensure consistency when managing safety.</li>
+				<li>Ensure employees apply safe work procedures.</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Assurez les inspections et les suivis ponctuels.</li>
+				<li>Visitez les sites sur une base régulière.</li>
+				<li>Assurez la sécurité de l’immeuble.</li>
+				<li>Agissez de manière conséquente en matière de gestion de la sécurité.</li>
+				<li>Assurez l’application des modalités de travail sécuritaires par les employés.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Provide Safety Instructions</h3>
+				{{else}}
+				<h4>Fournir des instructions en matière de sécurité</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<ul>
+				<li>Discourage shortcuts.</li>
+				<li>Ensure all staff members are orientated to site-specific safety requirements.</li>
+				<li>Refresh policy and procedure expectations.</li>
+				<li>Review the work once it is complete.</li>
+				<li>Correct employee’s unsafe act; document and follow up, if necessary.</li>
+				<li>Discipline, if necessary.</li>
+				<li>Discuss safety at monthly staff meetings, perform regular walk arounds looking for safety hazards, talk informally to staff about safety concerns.</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Découragez les raccourcis.</li>
+				<li>Assurez-vous que tout le personnel connaît les obligations en matière de sécurité spécifiques au site même.</li>
+				<li>Rappelez au personnel les attentes découlant des politiques et des procédures de travail.</li>
+				<li>Vérifiez tout travail une fois terminé.</li>
+				<li>Corrigez, documentez et, au besoin, faites le suivi de toute action dangereuse de la part d’un employé.</li>
+				<li>Disciplinez, lorsque cela est requis.</li>
+			</ul>
+			{{/if}}
+		</div>
+
+
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>When to discipline</h3>
+				{{else}}
+				<h4>À quel moment doit-on faire usage de la discipline?</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<ul>
+				<li>Repeated infraction</li>
+				<li>Serious safety violation (first time)</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Infractions répétées</li>
+				<li>Infraction grave à l’égard de la sécurité (première occasion)</li>
+			</ul>
+			{{/if}}
+		</div>
+				
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Key Aspects of Discipline Process</h3>
+				{{else}}
+				<h4>Aspects clés des modalités disciplinaires</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<ul>
+				<li>You must have the facts.</li>
+				<li>There must be just cause.</li>
+				<li>Discipline is to be corrective, and not intended as punishment, and is therefore imposed progressively.</li>
+				<li>Discipline should involve retraining of the employee in rules and requirements, removal to other work pending retraining, or a disciplinary demotion to other work for a specified period of time.</li>
+				<li>The appropriate penalty must take aggravating and mitigating factors into account.</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Vous devez connaître l’ensemble des faits.</li>
+				<li>Un motif valable doit exister.</li>
+				<li>L’objectif de la discipline est de corriger et non de punir; par conséquent, elle doit être appliquée de manière progressive.</li>
+				<li>La discipline comprend la formation d’appoint à l’égard des règles et des obligations qui s’appliquent à l’employé, son affectation à des tâches différentes pendant la période de la formation ou encore la rétogradation pendant une période spécifique.</li>
+				<li>La sanction adéquate prendra tout facteur aggravant ou atténuant en considération.</li>
+			</ul>
+			{{/if}}
+		</div>
+
+		{{/ionContent}}
+	{{/ionView}}
+</template>

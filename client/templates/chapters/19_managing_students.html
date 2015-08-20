@@ -1,0 +1,164 @@
+<template name="managing_students">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "managing_students"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color06">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Special Education Programs</h3>
+					{{else}}
+					<h4 style="font-size: 16px;">Programmes à l’intention l’enfance en difficulté</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color06">
+			{{#if lang_en}}
+			<p>In Ontario, greater than 10% of students receive special education programs and services.</p>
+			<p>Inherent in the work are some potential hazards, particularly when students exhibit aggressive/impulsive behaviour.</p>
+			<p>On occasion, student behaviour may be aggressive; therefore, teachers, educational assistants, and other students may be at increased risk for injury and illness.</p>
+			<h5>It is necessary to ensure:</h5>
+			<ul>
+				<li>the proper framework/plan is in place to protect employees;</li>
+				<li>the specific framework/plan is adhered to, reviewed regularly and modified if necessary.</li>
+			</ul>
+			{{else}}
+			<p>Plus de 10 % des élèves bénéficient des programmes et des services destinés à l’enfance en difficulté en Ontario.</p>
+			<p>Le risque fait partie de ce type de travail, notamment avec les élèves qui ont des comportements agressifs ou impulsifs.</p>
+			<p>Le comportement parfois agressif de ces élèves place les enseignants, les aides-enseignants et les autres élèves plus à risque de subir des blessures et des maladies.</p>
+			<h5>Ainsi, il convient de garantir :</h5>
+			<ul>
+				<li>l’instauration d’un cadre et d’un plan de protection des travailleurs;</li>
+				<li>que ce cadre et ce plan soient suivis, révisés régulièrement et modifiés, au besoin.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color06">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>OHSA: Section 25, 27</h3>
+					{{else}}
+					<h4>LSST : articles 25 et 27</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color06">
+			{{#if lang_en}}
+			<h5>“Reasonable Precautions” for working with students who have significant behaviour issues include:</h5>
+			<ul>
+				<li>Training in recognizing and handling behaviours</li>
+				<li>Preparing appropriate Individual Education Plans (IEP’s) and <strong>Safety Plans (24)</strong></li>
+				<li>Personal Protective Equipment (PPE) worn if required</li>
+				<li>Physical needs assessment of staff</li>
+				<li>Regular program review</li>
+			</ul>
+			<p>Appropriate programming involves knowledge of the student’s behaviour history and knowledge of factors that would be relevant in planning.</p>
+			{{else}}
+			<h5>Dans le cadre du travail avec un élève ayant des problèmes de comportement majeurs, le terme « précautions raisonnables » réfère à ce qui suit :</h5>
+			<ul>
+				<li>la formation permettant de reconnaître et de traiter de tels comportements;</li>
+				<li>l’élaboration d’un Plan d’enseignement individualisé (PEI) et d’un <strong>plan d’intervention (24)</strong>;</li>
+				<li>le port d’un équipement de protection individuel (EPI), si requis;</li>
+				<li>l’évaluation des exigences physiques du travail;</li>
+				<li>la révision du programme sur une base régulière.</li>
+			</ul>
+			<p>Tout programme approprié doit être basé sur la connaissance de l’historique du comportement de l’élève et des facteurs qui sont pertinents pour la planification.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color06">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>LEGISLATION - Education Act</h3>
+					{{else}}
+					<h4>LES LOIS - Loi sur l’éducation</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color06">
+			{{#if lang_en}}
+			<ul>
+				<li>It is the duty of principals and teachers to maintain order, discipline and safety.</li>
+				<li>The use of discretion is stressed in the exercise of discipline.</li>
+				<li>Management of behaviour must include appropriate planning and accommodations.</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Le devoir des directions d’école et des enseignants est d’assurer l’ordre, la discipline et la sécurité.</li>
+				<li>La discipline doit toujours être appliquée avec discernement.</li>
+				<li>La gestion du comportement doit inclure la planification et l’accommodement adéquats.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color06">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Ontario Human Rights Commission</h3>
+					{{else}}
+					<h4 style="font-size: 15px;">Commission ontarienne des droits de la personne</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color06">
+			{{#if lang_en}}
+			<ul>
+				<li>Importance of gathering complete information to determine if inappropriate behaviour is related to mitigating and/or extenuating factors.</li>
+				<li>The principles of progressive discipline must be incorporated into behaviour management planning.</li>
+				<li>These factors must be taken into consideration in developing appropriate plans for the management of behaviour.</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Souligne l’importance d’assurer que les renseignements recueillis sont complets, afin de déterminer si le comportement inapproprié est lié aux circonstances et/ou facteurs atténuants.</li>
+				<li>Les principes de la discipline progressive doivent être intégrés à toute planification de la gestion du comportement.</li>
+				<li>Il faut tenir compte de ces facteurs lors de l’élaboration des plans de gestion du comportement.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		{{/ionContent}}
+	{{/ionView}}
+</template>

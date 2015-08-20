@@ -1,0 +1,173 @@
+<template name="due_diligence">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "due_diligence"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<p>The school board is liable for any actions of negligence—by extension, as a management representative of the school board, you may be liable. You must organize and exercise your duties to prove due diligence.</p>
+			<p>Safety management, raising awareness of safety issues, holding everyone accountable for following safety procedures and record keeping are cornerstones of due diligence.</p>
+			{{else}}
+			<p>Le conseil scolaire est responsable de tout acte de négligence et, par conséquent, en tant que représentant du conseil, vous pourriez l’être également. Il vous incombe donc d’exercer la diligence raisonnable en organisant votre travail et en vous acquittant de vos responsabilités.</p>
+			<p>Il vous incombe de gérer la sécurité, de soulever l’attention sur les questions de sécurité, de rendre chacun responsable de ses actions et de garder des rapports écrits, voilà des exemples de diligence raisonnable.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Principal Due Diligence</h3>
+				{{else}}
+				<h4>La diligence raisonnable et la direction d’école</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<p>Due diligence requires you to consider every consequence that might arise during an activity. The “General Duty” clause of the Act states that Principals (supervisors) must "take every reasonable precaution – under the circumstances" to protect those in their care. <strong>This is your most significant duty</strong>. This includes activities involving teachers, students, maintenance staff, contractors, itinerant staff, visitors, and others.</p>
+			<p>You must recognize, assess, and control possible hazards:</p>
+			<ul>
+				<li>Know your duties under the law and take all reasonable steps to protect everyone. "Walk the talk".</li>
+				<li>Identify hazards and take steps to prevent accidents.</li>
+				<li>Communicate about hazards and steps to everyone who is likely to encounter them.</li>
+			</ul>
+			{{else}}
+			<p>L’exercice de la diligence raisonnable vous oblige à considérer toutes les conséquences possibles des activités. La clause dans la loi sur les devoirs stipule que les superviseurs (directions d’école) doivent prendre toutes les précautions raisonnables dans les circonstances pour protéger les personnes sous leurs soins. Ceci est votre plus grande responsabilité et inclus les activités impliquant tout votre personnel, enseignant, de secrétariat, de conciergerie, les élèves, les entrepreneurs, le personnel itinérant, les visiteurs, etc.</p>
+			<p>Vous devez reconnaître, évaluer et maîtriser tous les dangers possibles. Pour ce faire :</p>
+			<ul>
+				<li>Connaissez vos responsabilités juridiques et prenez toutes les précautions raisonnables afin d’assurer la sécurité de tous. Donnez l’exemple;</li>
+				<li>Déterminez les dangers et agissez pour prévenir les accidents;</li>
+				<li>Informez les personnes concernées des dangers auxquels elles sont exposées et des démarches de prévention que vous avez prises.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Test of Due Diligence</h3>
+				{{else}}
+				<h4>Le test de la diligence raisonnable</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<p><em><strong>"Is what I’m about to do (or not to do) something a jury of reasonable peers, knowing what my circumstances are right now, would do (or not do)?"</strong></em></p>
+			{{else}}
+			<p><em><strong>« Un jury composé de pairs raisonnables, connaissant la situation à laquelle je fais face actuellement, prendrait-il la même décision que moi à l’égard de l’action ou du manque d’action? »</strong></em></p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Defense of Due Diligence</h3>
+				{{else}}
+				<h4>La défense de la diligence raisonnable</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<p>Two branches to the defence of due diligence are:</p>
+			<ol>
+				<li><strong>Reasonable Care</strong>: You took all reasonable care to avoid the particular event.</li>
+				<li><strong>Mistaken Set of Facts</strong>: You believed in a mistaken set of facts that, if true, would render the prohibited act or omission innocent. (This does not apply to a mistake, ignorance or misunderstanding of the law.)</li>
+			</ol>
+			{{else}}
+			<p>La défense de la diligence raisonnable comprend deux volets :</p>
+			<ol>
+				<li><strong>Soins raisonnables</strong> : Vous avez pris tous les soins raisonnables pour prévenir l’incident.</li>
+				<li><strong>Faits erronés</strong> : Vous êtes fié à un ensemble de faits erronés qui, s’ils avaient été exacts, vous auraient innocenté de l’action interdite ou de l’omission. (Ceci ne s’applique pas aux erreurs, à l’ignorance ou à la méconnaissance de la loi.)
+</li>
+			</ol>
+			{{/if}}
+		</div>
+
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Due Diligence Variables</h3>
+				{{else}}
+				<h4>Les variables de la diligence raisonnable</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<ul>
+				<li>What are the intrinsic risks of your environment?</li>
+				<li>Who are you in terms of position and authority?</li>
+				<li>What are your duties?</li>
+				<li>What knowledge and skill should a person like you have?</li>
+				<li>What are the existing standards?</li>
+				<li>What constraints are you under?</li>
+				<li>Who are you responsible for?</li>
+				<li>What are you responsible for?</li>
+				<li>What risks have emerged today?</li>
+				<li>What controls are available to you?</li>
+				<li>What special or specific knowledge do you have today?</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Quels sont les risques inhérents à votre milieu de travail?</li>
+				<li>Quelle autorité exercez-vous et quel poste occupez-vous?</li>
+				<li>Quelles sont vos fonctions?</li>
+				<li>Quelles compétences et connaissances devrait posséder une personne comme vous?</li>
+				<li>Quelles sont les normes qui s’appliquent à votre situation?</li>
+				<li>Quelles sont les contraintes qui s’appliquent à votre situation?</li>
+				<li>De qui êtes-vous responsable?</li>
+				<li>De quoi êtes-vous responsable?</li>
+				<li>Quels sont les risques qui se sont manifestés aujourd’hui?</li>
+				<li>De quels moyens de contrôle disposez-vous?</li>
+				<li>Quelles connaissances spécifiques ou spéciales possédez-vous?</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		{{/ionContent}}
+	{{/ionView}}
+</template>

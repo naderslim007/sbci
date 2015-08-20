@@ -1,0 +1,157 @@
+<template name="ergonomic_hazards">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "ergonomic_hazards"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color01">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Musculoskeletal Disorders (MSD)</h3>
+					{{else}}
+					<h4>Les troubles musculosquelettiques</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<p>Musculoskeletal disorders are illnesses and injuries that affect one or more parts of the musculoskeletal system including sprains, strains, inflammation, degeneration, tears, pinched nerves or blood vessels, bone splintering, and stress fractures. These incidents are caused by working in an awkward posture, performing highly repetitive activities or too much forceful movement.</p>
+			<p>Symptoms are discomfort, pain, fatigue, swelling, stiffness, or numbness and tingling.</p>
+			{{else}}
+			<p>Il s’agit de maladies et de lésions qui affectent une ou plusieurs parties du système musculosquelletique, notamment les foulures, les entorses, les inflammations, les dégénérations, les déchirements, les nerfs ou vaisseaux sanguins coincés, les éclatements d’os et les fractures causées par la tension. Ces blessures sont dues à de mauvaises postures, à du travail très répétitifs et par l’utilisation de force trop grande.</p>
+			<p>Parmi les symptômes, on notera les malaises, la douleur, la fatigue, l’enflure, la raideur, l’engourdissement et le fourmillement.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color01">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Due Diligence Checklist</h3>
+					{{else}}
+					<h4>Liste de contrôle de diligence raisonnable</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<ul class="checks color01">
+				<li>Avoid repetitive work processes.</li>
+				<li>Put Engineering Controls (6) in place where possible.</li>
+				<li>Be familiar with policies and procedures.</li>
+				<li>Train staff on ergonomic risk factors; use appropriate equipment for the task; eliminate heavy lifting where possible.</li>
+			</ul>
+			{{else}}
+			<ul class="checks color01">
+				<li>Évitez les routines de travail répétitives.</li>
+				<li>Mettez en oeuvre des mesures d’ingénierie (6), si possible.</li>
+				<li>Familiarisez-vous avec les politiques et les procédures applicables.</li>
+				<li>Former le personnel sur les facteurs de risques ergonomiques; utiliser l’équipement approprié pour la tâche; éliminer le soulèvement d’objets lourds lorsque possible.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color01">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Other Ergonomic Hazards</h3>
+					{{else}}
+					<h4>Autres dangers ergonomiques</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<h5>Ladders</h5>
+			<p>Unstable positioning of ladders and overreaching are the most common poor practices found in ladder use.</p>
+			<ul class="checks color01">
+				<li>Be familiar with school board-specific policies and procedures.</li>
+				<li>Ensure only trained employees use ladders.</li>
+				<li>Ladders should be stored correctly and inspected before each use.</li>
+				<li>Never use a chair or desk as a step ladder.</li>
+			</ul>
+			<h5>Displays</h5>
+			<ul class="checks color01">
+				<li>Use a well maintained stepladder.</li>
+				<li>Remove obstacles before hanging items.</li>
+				<li>Use the buddy system.</li>
+			</ul>
+			<h5>Fall protection</h5>
+			<ul>
+				<li>Ensure a custodian or maintenance worker has received proper training in the correct use of fall protection equipment and school board-specific policies and procedures if he or she is required to work at heights (i.e. on the roof).</li>
+				<li>Maintain all personal protection equipment and store it according to the manufacturer’s specifications. Inspect it prior to each use.</li>
+			</ul>
+			<p>As of April 1, 2015, employers must ensure that workers using the following methods of fall protection complete an approved working at heights training program. Training must be completed before they can work at heights. The fall protection training requirements are set out in subsection 26.2(1) of the Construction Projects Regulation and training requirements are in the Occupational Health and Safety Awareness and Training Regulation. This is in addition to training requirements under the Construction Regulation.</p>
+			<ul>
+				<li>travel restraint systems</li>
+				<li>fall restricting systems</li>
+				<li>fall arrest systems</li>
+				<li>safety nets</li>
+				<li>work belts or safety belts</li>
+			</ul>
+			{{else}}
+			<h5>L’échelle</h5>
+			<p>Le positionnement instable des échelles et l’extension à outrance sont les mauvaises pratiques les plus communes dans ce domaine.</p>
+			<ul class="checks color01">
+				<li>Familiarisez-vous avec les politiques et les procédures applicables, spécifiques à votre conseil scolaire.</li>
+				<li>Interdisez l’usage des échelles au personnel non formé.</li>
+				<li>Assurez-vous qu’elles sont rangées correctement et inspectées avant chaque utilisation.</li>
+				<li>Ne JAMAIS utiliser une chaise ou un bureau comme escabeau.</li>
+			</ul>
+			<h5>Affiches</h5>
+			<ul class="checks color01">
+				<li>Assurez-vous que toute échelle et escabeau sont bien entretenus.</li>
+				<li>Retirez tout obstacle avant de les entreposer.</li>
+				<li>Employez le système de surveillance mutuelle.</li>
+			</ul>
+			<h5>Protection contre les chutes</h5>
+			<ul class="checks color01">
+				<li>Assurez-vous que tout concierge et travailleur ont reçu la bonne formation sur l’utilisation des dispositifs de protection contre les chutes et qu’il connaît les politiques et les procédures spécifiques au conseil scolaire avant d’effectuer du travail en hauteur (ex. : sur le toit).</li>
+				<li>Assurez le bon entretien de l’équipement de protection individuel et que son rangement respecte les conseils du fabricant. Assurez qu’il soit inspecté avant chaque usage.</li>
+			</ul>
+			<p>Depuis le 1er avril  2015, les employeurs doivent s’assurer que les travailleurs qui utilisent les systèmes de protection contre les chutes, énumérés ci-dessous, aient complété une formation approuvée sur le programme du travail en hauteur. Les exigences sur la formation contre les chutes sont établies dans le paragraphe 26.2(1) du Règlement sur les projets de construction, dans le Programme de sensibilisation en santé et sécurité et dans les règlements de formation.  Ceci est en plus des exigences de formation sous le Règlement de la construction.</p>
+			<ul>
+				<li>Systèmes de retenue</li>
+				<li>Dispositifs de limitation des chutes</li>
+				<li>Dispositifs antichute</li>
+				<li>Filets de sécurité</li>
+				<li>Ceintures de sécurité et harnais de sécurité</li>
+			</ul>
+			{{/if}}
+		</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>

@@ -1,0 +1,218 @@
+<template name="accident_investigation_interview_questions">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "accident_investigation_interview_questions"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color03">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Interview Questions</h3>
+					{{else}}
+					<h4>Interview Questions</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+
+		<div class="content-wrap color03">
+			{{#if lang_en}}
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="100"><strong>Question</strong></td>
+					<td><strong>Result</strong></td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Who?</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Learn names of all the people involved.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">What?</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Describe in detail what happened.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Where?</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Describe the exact location of the accident.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">When?</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Specify the exact time of the accident.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">How?</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Describe the sequence of events preceding the accident.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Why?</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Only necessary after root cause analysis takes place.</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			{{else}}
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td valign="top" width="100"><strong>Question</strong></td>
+					<td valign="top"><strong>Result</strong></td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Qui?</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Obtenir les noms de toutes les personnes impliquées</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Quoi?</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Décrire les détails de l’incident</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Où?</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Décrire le lieu précis de l’accident</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Quand?</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Préciser le moment précis où l’accident s’est produit</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Comment?</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Fournir la séquence des événements qui ont précédé l’accident</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Pourquoi?</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Nécessaire uniquement lorsque l’analyse des causes de l’accident est terminée</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color03">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Interview Dos and Don’ts</h3>
+					{{else}}
+					<h4>À faire et à ne pas faire lors de l’entrevue</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+
+		<div class="content-wrap color03">
+			{{#if lang_en}}
+			<h5>Do Not</h5>
+			<ul class="exes">
+				<li>Intimidate the witness.</li>
+				<li>Interrupt.</li>
+				<li>Prompt.</li>
+				<li>Ask leading questions.</li>
+				<li>Show your own emotions.</li>
+				<li>Make lengthy notes during the interview.</li>
+				<li>Use cell phone or personal data device.</li>
+			</ul>
+			<h5>Do</h5>
+			<ul class="checks">
+				<li>Put the witness at ease.</li>
+				<li>Emphasize the real reason for the investigation, to determine what happened and why.</li>
+				<li>Let the witness talk; you listen.</li>
+				<li>Confirm you have the statement correct.</li>
+				<li>Try to sense any underlying feelings of the witness.</li>
+				<li>Make short notes during the interview.</li>
+				<li>Ask open ended questions.</li>
+				<li>Conduct interviews separately.</li>
+				<li>Make it clear the investigation is used to avoid recurrence and not to place blame.</li>
+			</ul>
+			{{else}}
+			<h5>Ne Pas</h5>
+			<ul class="exes">
+				<li>Intimider le témoin</li>
+				<li>L’interrompre</li>
+				<li>Interpréter</li>
+				<li>Suggérer des réponses</li>
+				<li>Montrer vos propres émotions</li>
+				<li>Prendre des notes exhaustives</li>
+				<li>Utiliser un téléphone portable ou un assistant numérique personnel</li>
+			</ul>
+			<h5>faire</h5>
+			<ul class="checks">
+				<li>Mettre le témoin à l’aise</li>
+				<li>Souligner que la raison de l’enquête est de comprendre ce qui s’est passé et le pourquoi</li>
+				<li>Écouter et laisser parler le témoin</li>
+				<li>Confirmer l’exactitude de sa déclaration</li>
+				<li>Essayer de déceler toute émotion sous-jacente du témoin</li>
+				<li>Prendre des notes sommaires pendant l’entrevue</li>
+				<li>Poser des questions ouvertes</li>
+				<li>Interroger les gens individuellement</li>
+				<li>S’assurer que l’employé interrogé comprend que l’objectif de l’enquête est de prévenir et non de blâmer qui que ce soit</li>
+			</ul>
+			
+			{{/if}}
+		</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>

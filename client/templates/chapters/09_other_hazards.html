@@ -1,0 +1,205 @@
+<template name="other_hazards">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "other_hazards"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color01">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Housekeeping</h3>
+					{{else}}
+					<h4>Le ménage des locaux</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<p>Disorganization is in itself a health and safety hazard. Many slips, trips and falls can be attributed to items that have not been put away in their proper place.</p>
+			<p>Often storage space is at a premium, but a well organized classroom can minimize the issue.</p>
+			<ul>
+				<li>Coats and footwear should be put away and off the floor.</li>
+				<li>Storage areas should have shelving that is in good repair.</li>
+				<li>Heavier items should always be kept at waist height or lower.</li>
+				<li>Electrical cords should be off to the side and not running through key areas. If it is a necessity, they should be covered and/or taped down and signage posted.</li>
+				<li>Spills and clutter should be cleaned up immediately.</li>
+			</ul>
+			{{else}}
+			<p>Le manque d’organisation est un danger en tant que tel. Souvent, on glissera, on trébuchera ou on tombera à cause d’articles qui ne sont pas correctement rangés.</p>
+			<p>S’il est vrai que l’espace de rangement est souvent insuffisant, une salle de classe bien organisée diminuera le danger.</p>
+			<ul>
+				<li>Manteaux et sacs à dos devraient être bien rangés ailleurs que sur le plancher, de même que pour les chaussures si possible.</li>
+				<li>Les espaces d’entreposage devraient être munies d’étagères en bonne condition.</li>
+				<li>Les objets lourds devraient toujours être rangés à la hauteur de la taille ou plus bas.</li>
+				<li>Les rallonges électriques devraient être placées le long des murs et non pas passer à travers des endroits passants. Si impossible, celles-ci devraient être recouvertes et une enseigne d’avertissement devrait être affichée.</li>
+				<li>Les renversements et les débris devraient être nettoyés immédiatement.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color01">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Off-Site Activities</h3>
+					{{else}}
+					<h4>Activités hors site</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<ul>
+				<li>Follow school board policies and procedures.</li>
+				<li>Communicate to parents and students specific expectations for all off-site activities.</li>
+				<li>Provide adequate supervision.</li>
+				<li>Know the risk associated with the off site activity, where proper PPE if required.</li>
+				<li>Ensure regular attendance taking & roll call.</li>
+				<li>Ensure a person trained in First Aid is always available with adequate first aid supplies.</li>
+				<li>Develop and implement emergency plans with specific assigned duties and names/telephone numbers of persons to be contacted.</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Conformez-vous aux politiques et aux procédures du conseil scolaire.</li>
+				<li>Communiquez les attentes spécifiques aux parents et aux élèves au sujet de toute activité hors site.</li>
+				<li>Fournissez un encadrement adéquat.</li>
+				<li>Connaître les dangers associés aux sorties éducatives et porter l’ÉPI si necessaire.</li>
+				<li>Prenez régulièrement les présences.</li>
+				<li>Assurez-vous qu’une personne formée en premiers soins et que des fournitures médicales sont disponibles.</li>
+				<li>Préparez et mettez en oeuvre un plan d’urgence, qui comprend les noms et numéros de téléphone des personnes-ressources et qui précisent les tâches spécifiques qui leur sont attribuées.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color01">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Heat or Cold Stress</h3>
+					{{else}}
+					<h4>Les contraintes liées à la chaleur ou au froid</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<ul>
+				<li>Working in hot/cold environments may place stress on your body’s heating and cooling system.</li>
+				<li>It is critical that the body be able to preserve core body temperature steadily at 37°C (98.6°F). This thermal balance must be maintained to preserve normal body functioning as well as provide energy for activity.</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Travailler dans un milieu chaud ou froid peut demander d’importants efforts au système corporel de contrôle de la température.</li>
+				<li>La température interne du corps humain doit être maintenue à 37 °C (98,6 °F). Cet équilibre vital garantie le fonctionnement normal du corps et fournit l’énergie requise pour toute activité.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color01">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Heat and cold stress related illnesses</h3>
+					{{else}}
+					<h4>Les maladies liées à l’exposition à la chaleur et au froid</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<ul>
+				<li>Sunburn</li>
+				<li>Heat Stroke</li>
+				<li>Heat Rash</li>
+				<li>Heat Cramps</li>
+				<li>Heat Exhaustion</li>
+				<li>Fainting</li>
+				<li>Frostbite</li>
+				<li>Hypothermia</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Coups de soleil</li>
+				<li>Coups de chaleur</li>
+				<li>Boutons de chaleur</li>
+				<li>Crampes de chaleur</li>
+				<li>Épuisement par la chaleur</li>
+				<li>Évanouissements</li>
+				<li>Engelures</li>
+				<li>Hypothermie</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color01">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Sun safety control measures: PPE</h3>
+					{{else}}
+					<h4>Mesures de sécurité à l’égard du soleil</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color01">
+			{{#if lang_en}}
+			<ul>
+				<li>Apply sunscreen a minimum of 20 minutes before going outside so it penetrates the skin thoroughly for better protection; reapply sunscreen at regular intervals.</li>
+				<li>Employees should pay special attention to sun exposed areas such as ears, face, scalp, neck, back of legs, shoulders, and back.</li>
+				<li>Individuals who are sun sensitive, or product sensitive (i.e. allergies, dermatitis) should obtain professional advice regarding the most effective sun protective barrier for their skin type.</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Appliquez l’écran solaire 20 minutes avant une exposition au soleil afin qu’il pénètre la peau et augmente le niveau de protection. Remettez-en régulièrement.</li>
+				<li>Les travailleurs doivent porter une attention particulière aux parties du corps exposées au soleil, notamment les oreilles, le visage, le cuir chevelu, le cou, l’arrière des jambes, les épaules et le dos.</li>
+				<li>Les personnes qui sont sensibles au soleil ou aux produits de protection (allergies, dermatites, etc.) devraient demander conseil à un professionnel de la santé en ce qui concerne le type de protection contre le soleil qui leur convient le mieux.</li>
+			</ul>
+			{{/if}}
+		</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>

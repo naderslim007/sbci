@@ -1,0 +1,165 @@
+<template name="return_to_work_implementation">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "return_to_work_implementation"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color04">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Program Implementation</h3>
+					{{else}}
+					<h4>Mise en oeuvre du programme de retour au travail</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color04">
+			{{#if lang_en}}
+			<h5>When an accident occurs:</h5>
+			<ul class="checks">
+				<li>The school board must report all injuries and incidents three days from the date of the accident; otherwise, the school board incurs a monetary fine.</li>
+				<li>Send the Internal Accident Report to Human Resources (HR) when an employee is injured on the school site.</li>
+				<li>Talk to your employee when he or she reports an injury. Ask your employee to contact HR by phone with details of the accident, if necessary.</li>
+				<li>Let the employee know about the Return to Work Program.</li>
+				<li>Discuss modified work, such as an adjustment to tasks, at the time a soft-tissue injury is reported (a strain, sprain or just pain/ ache).</li>
+				<li class="has-sub"><ul>
+					<li>What do they think they can do?</li>
+					<li>What help do they need?</li>
+				</ul></li>
+			</ul>
+			{{else}}
+			<h5>Lorsqu’un accident se produit :</h5>
+			<ul class="checks">
+				<li>Le conseil scolaire doit déclarer toute blessure ou accident dans les trois jours suivant un incident, sous peine d’amende.</li>
+				<li>Par conséquent, faire parvenir un rapport interne d’accident aux Ressources humaines lorsqu’un employé est blessé sur le site de l’école.</li>
+				<li>Parlez avec l’employé qui signale une lésion et demandez-lui, au besoin, de communiquer les détails de l’accident aux RH.</li>
+				<li>Informez l’employé du programme de retour au travail.</li>
+				<li>Évoquez la possibilité du travail modifié lors d’une déclaration de lésion aux tissus mous (entorse, foulure ou simple douleur).</li>
+				<li class="has-sub"><ul>
+					<li>Quelles tâches le travailleur peut-il réaliser?</li>
+					<li>Quel type d’assistance lui faudrait-il?</li>
+				</ul></li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color04">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Your Responsibilities</h3>
+					{{else}}
+					<h4>Vos responsabilités</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color04">
+			{{#if lang_en}}
+			<ul>
+				<li>Accept accommodation requests in good faith.</li>
+				<li>Take an active role in finding possible solutions.</li>
+				<li>Maintain confidentiality.</li>
+				<li>Deal with accommodation request in timely manner.</li>
+				<li>Document discussions and offers.</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Recevoir les demandes d’accommodement de bonne foi;</li>
+				<li>Jouer un rôle actif dans la recherche de solutions éventuelles;</li>
+				<li>Assurer la confidentialité;</li>
+				<li>Traiter la demande d’accommodement en temps convenable;</li>
+				<li>Documenter les discussions et les offres.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color04">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>School Board’s Rights and Obligations</h3>
+					{{else}}
+					<h4>Les droits et devoirs du conseil scolaire</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color04">
+			{{#if lang_en}}
+			<p>The employer has the right to obtain functional abilities information from the doctor/physiotherapist.</p>
+			{{else}}
+			<p>L’employeur est habilité à obtenir les renseignements sur les capacités fonctionnelles du travailleur de la part de son médecin ou de son physiothérapeute.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color04">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>When an Employee Returns to Work</h3>
+					{{else}}
+					<h4>Au moment du retour au travail</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color04">
+			{{#if lang_en}}
+			<h5>The school board must re-employ an injured employee.</h5>
+			<ul class="checks">
+				<li>If an employee returns to modified or accommodated work for more than two weeks, HR will provide a documented Return to Work (RTW) plan for all parties to review.</li>
+				<li>Contact HR if you need help regarding the employee’s return to work.</li>
+				<li>Follow-up with the employee regularly until they are well again.</li>
+				<li>Advise HR if adjustments are required to the RTW plan. Ensure all changes are documented.</li>
+				<li>In case of a dispute or appeal, only what is documented is considered as evidence.</li>
+			</ul>
+			{{else}}
+			<h5>Le conseil scolaire doit réemployer le travailleur blessé.</h5>
+			<ul class="checks">
+				<li>Dans le cas où l’employé retourne à un travail modifié ou accommodé pour une période dépassant deux semaines, le service des RH établira un plan de retour au travail à l’intention de l’ensemble des parties.</li>
+				<li>Communiquez avec les RH si vous avez besoin d’aide en ce qui concerne le retour au travail de l’employé.</li>
+				<li>Faites le suivi avec l’employé régulièrement jusqu’à ce qu’il retrouve sa pleine santé.</li>
+				<li>Avisez les RH de toute modification requise au plan de retour au travail. Documentez toute modification.</li>
+				<li>En cas de litige ou d’appel, seuls les éléments documentés seront considérés comme preuves.</li>
+			</ul>
+			{{/if}}
+		</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>

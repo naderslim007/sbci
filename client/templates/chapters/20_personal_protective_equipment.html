@@ -1,0 +1,107 @@
+<template name="personal_protective_equipment">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "personal_protective_equipment"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color06">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>PPE Legislative Requirement</h3>
+					{{else}}
+					<h4>LSST - Les exigences juridiques à l’égard de l’EPI</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color06">
+			{{#if lang_en}}
+			<p>The Occupational Heath and Safety Act (OHSA) requires that boards (the employer) provide prescribed devices.</p>
+			<p>The principal (supervisor) must ensure that any required PPE is used and/or worn correctly by the worker.</p>
+			<p>The worker is required to use or wear the PPE as required by the supervisor/employer.</p>
+			{{else}}
+			<p>La Loi sur la santé et la sécurité au travail oblige les conseils scolaires à fournir tout dispositif requis.</p>
+			<p>La direction d’école ou le superviseur doit s’assurer que tout dispositif EPI requis est porté et utilisé correctement par le travailleur.</p>
+			<p>Le travailleur doit porter et utiliser le dispositif EPI selon les consignes de l’employeur.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color06">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Where and when is PPE prescribed?</h3>
+					{{else}}
+					<h4>Où et quand l’EPI est-il prévu?</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color06">
+			{{#if lang_en}}
+			<ul>
+				<li>In the student’s IEP</li>
+				<li>In the student’s safety or medical plan</li>
+			</ul>
+			<p>If the Identification, Placement, and Review Committee (IPRC) has not identified specific PPE, the principal, in consultation with the parents and professional staff, must provide PPE if necessary.</p>
+			{{else}}
+			<ul>
+				<li>Dans le Plan d’enseignement individualisé de l’élève</li>
+				<li>Dans le plan médical ou d’intervention de l’élève</li>
+			</ul>
+			<p>Si le Comité d’identification, de placement et de révision (CIPR) n’a pas précisé un EPI spécifique, la direction d’école devra choisir et fournir (si nécessaire) le dispositif d’EPI après consultation avec les parents de l’élève et avec le personnel spécialisé.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color06">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>How is PPE obtained?</h3>
+					{{else}}
+					<h4>Comment se procurer l’EPI?</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color06">
+			{{#if lang_en}}
+			<p>Appropriate PPE is obtained through consultation with parents and board professional staff who can identify suppliers, funding support (if available), and provide classroom training on the proper use, care and storage.</p>
+			<img src="images/21_EA_PPE.png" width="100%" height="auto" alt="" class="asset-max-width"/>
+			{{else}}
+			<p>L’école fait l’acquisition de l’EPI approprié en consultation avec les parents et le personnel spécialisé du conseil, qui seront en mesure de trouver des fournisseurs et des sources de financement et de donner la formation en salle de classe sur le bon emploi, l’entretien et le rangement des dispositifs.</p>
+			<img src="images/21_EA_PPE.png" width="100%" height="auto" alt="" class="asset-max-width"/>
+			{{/if}}
+		</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>

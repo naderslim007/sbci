@@ -1,0 +1,232 @@
+<template name="accident_investigation_overview">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "accident_investigation_overview"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="content-wrap color03">
+			{{#if lang_en}}
+			<h5>OHSA: Sections 25, 26, 27, 51, 52</h5>
+			<ul>
+				<li>Employers and supervisors/principals must ensure there is a safe working environment.</li>
+				<li>Accidents are investigated and situations corrected.</li>
+				<li>Critical injury is reported immediately.</li>
+			</ul>
+			<p>In the event of a fatality or critical injury in the workplace, the employer must immediately notify the Ministry of Labour and the JHSC or health and safety representative. The employer must also notify in writing a Regional Director of the Ministry of Labour giving the details of the accident. This must be done within 48 hours. (Section 51(1))</p>
+			<h5>A “critical injury” is an injury of a serious nature that,</h5>
+			<ul>
+				<li>places life in jeopardy</li>
+				<li>produces unconsciousness</li>
+				<li>results in substantial loss of blood</li>
+				<li>involves the fracture of a leg or arm but not a finger or toe</li>
+				<li>involves the amputation of a leg, arm, hand or foot but not a finger or toe</li>
+				<li>consists of burns to a major portion of the body, or</li>
+				<li>causes the loss of sight in an eye. [Regulation 834]</li>
+			</ul>
+			{{else}}
+			<h5>CMSST – Articles 25, 26, 27, 51 et 52</h5>
+			<ul>
+				<li>Tout employeur, superviseur et direction d’école doivent garantir un milieu de travail sécuritaire.</li>
+				<li>Tout accident doit faire l’objet d’une enquête et les situations irrégulières corrigées.</li>
+				<li>Toute blessure grave doit être immédiatement déclarée.</li>
+			</ul>
+			<p>Dans le cas d’un accident grave ou mortel l’employeur doit aviser immédiatement l’InfoCentre de santé et de sécurité au travail du ministère du Travail, le comité mixte (ou le délégué à la santé et à la sécurité) et le syndicat, le cas échéant, par téléphone ou par un autre moyen de communication directe. Dans les 48 heures qui suivent l'accident, l'employeur avise également par écrit un directeur du ministère du Travail, en précisant les circonstances de l'accident et les détails qui peuvent être prescrits [paragraphe 51 (1)]</p>
+			<h5>Une « blessure critique » s’entend d’une blessure grave qui selon le cas :</h5>
+			<ul>
+				<li>met la vie en danger</li>
+				<li>fait perdre connaissance</li>
+				<li>entraîne une perte importante de sang</li>
+				<li>comporte la fracture d’une jambe ou d’un bras, mais pas d’un doigt ou d’un orteil</li>
+				<li>comporte l’amputation d’une jambe, d’un bras, d’une main ou d’un pied, mais pas d’un doigt ou d’un orteil</li>
+				<li>comporte des brûlures sur une grande surface du corps</li>
+				<li>provoque la perte de la vue dans un œil. R.R.O. 1990, Règl. 834, art. 1</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color03">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>An Accident Investigation</h3>
+					{{else}}
+					<h4>L’enqute sur un accident</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<p>Most accidents are caused by the failure of people, equipment, supplies, or surroundings to behave or react as expected.</p>
+			<p>An accident investigation is a detailed, systematic approach to uncovering the who, what, where, when, why and how of an incident or near miss. It is a tool to identify causes so that steps or control measures can be taken to prevent recurrence.</p>
+			{{else}}
+			<p>La plupart des accidents se produisent lorsque les personnes, les équipements, les fournitures ou l’environnement n’agissent ou ne réagissent pas selon les attentes.</p>
+			<p>L’enquête sur un accident s’avère une démarche détaillée et systématique qui vise à comprendre le qui, le quoi, le où et le comment de tout incident et accident évité de justesse. C’est un outil qui permet de cerner les causes d’un accident afin d’entreprendre les démarches requises pour empêcher qu’il ne se produise de nouveau.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color03">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Investigation Goal</h3>
+					{{else}}
+					<h4>L’objectif de l’enquête</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<p>The aim of an accident investigation is to prevent recurrence of the same incident and to find corrective action for improvement.</p>
+			{{else}}
+			<p>L’enquête sur un accident vise à empêcher que d’autres incidents semblables ne se produisent et à mettre en oeuvre l’action corrective nécessaire.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color03">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Who Should Perform an Investigation?</h3>
+					{{else}}
+					<h4>Qui devrait se charger de l’enquête?</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<ul>
+				<li>A supervisor or principal, along with a health and safety officer or representative, investigates the accident.</li>
+				<li>If it is a critical accident, a certified H&S member and (if necessary) a JHSC worker member or police officer are included in the investigation.</li>
+			</ul>
+			<p>A supervisor or principal is likely to be the most knowledgeable about the work, the persons involved, and the current conditions. They can also take immediate remedial action.</p>
+			{{else}}
+			<ul>
+				<li>Un superviseur ou une direction d’école enquêtera sur l’accident conjointement avec un agent de santé et sécurité ou une personne désignée.</li>
+				<li>Pour tout accident critique, un membre agréé du CMSST représentant les travailleurs et/ou un policier participera à l’enquête.</li>
+			</ul>
+			<p>Un superviseur ou une direction d’école est susceptible de mieux connaître le travail, les personnes impliquées et les conditions existantes lorsque l’incident s’est produit. Par conséquent, elles sont les mieux placées pour prendre des mesures correctives.</p>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color03">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Types of Accidents</h3>
+					{{else}}
+					<h4>Types d’accidents</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color02">
+			{{#if lang_en}}
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="100"><strong>Type</strong></td>
+					<td><strong>Description</strong></td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Minor</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Accidents that cause minor property damage, injury or illness requiring little or no treatment.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Serious</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Accidents that cause injury, illness, or damage to equipment or property.</li>
+							<li>If the accident is considered recordable to WSIB or Ministry of Labour.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Critical</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Must be reported immediately by phone, or other direct means, to an inspector of the Ministry of Labour, to the H&S Committee, H&S representative and to the union.</li>
+							<li>Follow up in writing to MOL within 48 hours.</li>
+							<li>Must include worker H&S representative as per school board procedures.</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			{{else}}
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="100"><strong>Type</strong></td>
+					<td><strong>Description</strong></td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Mineur</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Un accident impliquant une lésion ou une maladie nécessitant peu ou pas de traitement ou qui cause des dommages mineurs à la propriété.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Sérieux</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Un accident qui cause une lésion ou une maladie, ou des dommages à la propriété.</li>
+							<li>S’il doit être déclaré à la CSPAAT ou au ministère du Travail.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left">Critique</td>
+					<td valign="top" align="left">
+						<ul>
+							<li>Dans le cas d’un accident grave ou mortel l’employeur doit aviser immédiatement l’InfoCentre de santé et de sécurité au travail du ministère du Travail, le comité mixte (ou le délégué à la santé et à la sécurité) et le syndicat, le cas échéant, par téléphone ou par un autre moyen de communication directe.</li>
+							<li>Dans les 48 heures qui suivent l'accident, l'employeur avise également par écrit un directeur du ministère du Travail, en précisant les circonstances de l'accident et les détails qui peuvent être prescrits [paragraphe 51 (1)]</li>
+							<li>L'enquête implique un représentant de la santé et de la sécurité, selon les termes du conseil.</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			{{/if}}
+		</div>
+
+		{{/ionContent}}
+	{{/ionView}}
+</template>

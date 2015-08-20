@@ -1,0 +1,47 @@
+<template name="work_refusal_process">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "work_refusal_process"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color00">
+		<div class="ribbon-body">
+			<div class="ribbon-content">
+				{{#if lang_en}}
+				<h3>Work Refusal Process Chart</h3>
+				{{else}}
+				<h4>Processus de refus de travail graphique</h4>
+				{{/if}}
+			</div>
+			<svg class="flag-tip">
+			  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+			</svg>
+		</div>
+		<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color00">
+			{{#if lang_en}}
+			<img src="images/work_refusal.png" width="100%" height="auto" alt="" class="asset-max-width"/>
+			{{else}}
+			<img src="images/work_refusal_f.png" width="100%" height="auto" alt="" class="asset-max-width"/>
+			{{/if}}
+		</div>
+
+
+		{{/ionContent}}
+	{{/ionView}}
+</template>

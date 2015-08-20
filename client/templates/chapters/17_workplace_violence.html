@@ -1,0 +1,269 @@
+<template name="workplace_violence">
+	{{#contentFor "headerButtonLeft"}}
+	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">{{_ "workplace_violence"}}</h1>
+	{{/contentFor}}
+
+
+	{{#ionView}}
+		{{#ionContent}}
+		
+		<div class="ribbon color05">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Definition</h3>
+					{{else}}
+					<h4>Définition</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color05">
+			{{#if lang_en}}
+			<p>Defined in the OHSA as <strong>the physical force by a person against a worker, in a workplace, that causes or could cause physical injury</strong>.</p>
+			<h5>Can also include:</h5>
+			<ul>
+				<li>an attempt of physical force against a worker in a workplace, that could cause injury</li>
+				<li>a statement or behaviour that a worker could interpret as a threat to exercise physical harm, in a workplace, that could cause physical injury [Section 1].</li>
+			</ul>
+			<h5>Examples of workplace violence are:</h5>
+			<ul>
+				<li>Verbal threat of physical harm</li>
+				<li>Threatening emails</li>
+				<li>Shaking a fist in a worker’s face</li>
+				<li>Hitting or trying to hit a worker</li>
+				<li>Throwing an object at a worker</li>
+				<li>Sexual violence against a worker</li>
+			</ul>
+			{{else}}
+			<p>La LSST Définit la violence au travail Comme la force physique par une personne contre un travailleur, dans un lieu de travail, qui cause ou qui pourrait causer un préjudice corporel</p>
+			<h5>Peut également inclure :</h5>
+			<ul>
+				<li>tentative d’employer contre un travailleur, dans un lieu de travail, une force physique qui pourrait lui causer un préjudice corporel;</li>
+				<li>propos ou comportement qu'un travailleur peut raisonnablement interpréter comme une menace employer contre lui, dans un lieu de travail, une force physique qui pourrait lui causer un préjudice corporel.</li>
+			</ul>
+			<h5>Exemples de violence au travail :</h5>
+			<ul>
+				<li>menace verbale ou physique</li>
+				<li>courriels menaçants</li>
+				<li>montrer le poing au visage d’un travailleur</li>
+				<li>frapper ou essayer de frapper un travailleur</li>
+				<li>lancer un objet en direction d’un travailleur</li>
+				<li>violence sexuelle envers un travailleur</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color05">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Violence Protection</h3>
+					{{else}}
+					<h4>La protection contre la violence</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color05">
+			{{#if lang_en}}
+			<p>As per the OHSA, supervisor and employer duties are to train and provide information and instruction that is appropriate for the work, and includes violence protection.</p>
+			<h5>LEGISLATION - Strategies for the Implementation of Workplace Violence Legislation (Bill 168) (OHSA Section 32.0.1)</h5>
+			<ul class="checks">
+				<li>Post a policy on workplace violence and harassment.</li>
+				<li>Implement a Workplace Violence Prevention Program, specifically capturing reporting and investigation in the workplace.</li>
+				<li>Address domestic violence (19) risk in the workplace.</li>
+				<li>Disclose persons with a history of violence.</li>
+				<li>Follow procedures on how to deal with incidents and complaints of violence, including how to summon immediate assistance when workplace violence occurs.</li>
+				<li>Ensure that employees are able to refuse work where risk of workplace violence is likely.</li>
+				<li>Report to JHSC (2) within 4 days of workplace violence.</li>
+			</ul>
+			{{else}}
+			<p>Selon la Loi sur la santé et la sécurité au travail, le superviseur et l’employeur doivent former tout employé et lui fournir de l’information et des instructions adéquates sur son travail, ceci doit inclure la protection contre la violence.</p>
+			<h5>LES LOIS - Stratégies de mise en oeuvre du projet de loi 168 concernant la violence au travail (Loi sur la santé et la sécurité au travail, article 32.0.1)</h5>
+			<ul class="checks">
+				<li>Afficher une politique sur la violence et une sur le harcèlement au travail.</li>
+				<li>Mettre en oeuvre un programme de prévention de la violence au travail qui vise spécifiquement le signalement et les enquêtes.</li>
+				<li>Évaluer le risque de violence familiale (19) au travail.</li>
+				<li>Identifier les individus qui ont déjà fait preuve de violence.</li>
+				<li>Suivre les procédures établies sur la façon de traiter les incidents et les plaintes pour violence, y compris les procédures concernant l’appel à l’aide immédiat lorsqu’un cas de violence éclate au travail.</li>
+				<li>Permettre à tout employé de refuser de travailler là où le risque de violence est réel.</li>
+				<li>Déclarer tout cas de violence au travail au CMSST (2) dans un délai maximal de quatre (4) jours.</li>
+			</ul>
+			{{/if}}
+		</div>
+
+		<div class="ribbon color05">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Risk Assessment</h3>
+					{{else}}
+					<h4>Évaluation des risques de violence</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color05">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Assess the risk of workplace violence; consider elements that are common to all workplaces and specific to a particular workplace.</li>
+				<li>Evaluate the likelihood of an injury occurring and its severity.</li>
+				<li>When conducting an assessment, identify hazards.</li>
+				<li>Risk assessments should be conducted by competent individuals who have broad experience and understanding of the workplace.</li>
+			</ul>
+			{{else}}
+			<ul class="checks">
+				<li>Évaluer la probabilité d’une blessure, ainsi que le degré de gravité de cette dernière.</li>
+				<li>Déterminer les dangers lors de l’évaluation.</li>
+				<li>Évaluer le risque de violence au travail et prendre en compte les éléments qui sont communs aux milieux de travail de même nature, de même que les éléments propres au milieu de travail spécifique.</li>
+				<li>Toute évaluation de risque sera réalisée par un individu compétent ayant une expérience étendue et une bonne compréhension du milieu de travail.</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color05">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Risk of Violence Factors</h3>
+					{{else}}
+					<h4>Risque de facteurs de violence</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color05">
+			{{#if lang_en}}
+			<ul>
+				<li>Contact with public and visitors</li>
+				<li>Money or valuables</li>
+				<li>Delivery of passengers, goods, and services</li>
+				<li>Working alone or in small numbers</li>
+				<li>Working late at night</li>
+				<li>Mobile workplace</li>
+				<li>Travel</li>
+			</ul>
+			{{else}}
+			<ul>
+				<li>Les contacts avec le public et les visiteurs</li>
+				<li>L’argent et les objets de valeur</li>
+				<li>La livraison de passagers, de biens et de services</li>
+				<li>Travailler seul ou en petits groupes</li>
+				<li>Travailler la nuit</li>
+				<li>Un lieu de travail mobile</li>
+				<li>Le voyagement</li>
+			</ul>
+			{{/if}}
+		</div>
+		
+		<div class="ribbon color05">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Checklist</h3>
+					{{else}}
+					<h4>Liste de contrôle</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color05">
+			{{#if lang_en}}
+			<ul class="checks">
+				<li>Review factors that contribute to risk of violence.</li>
+				<li>Review historical records and reports.</li>
+				<li>Survey staff: ask how safe do they feel.</li>
+				<li>Review existing practices.</li>
+			</ul>
+			<p>If the assessment identified the risk of violence in the workplace, hazards need to be addressed with procedures and controls. Look to redesign tasks and practices where required.</p>
+			{{else}}
+			<ul class="checks">
+				<li>Pointez les facteurs qui augmentent les risques de violence.</li>
+				<li>Examinez les dossiers et les rapports historiques.</li>
+				<li>Interrogez le personnel au sujet de leur sentiment de sécurité.</li>
+				<li>Évaluez les pratiques en vigueur.</li>
+			</ul>
+			<p>Si l’évaluation confirme un risque de violence au travail, il convient d’établir des procédures et des moyens de contrôle pour y faire face. Considérez la possibilité de modifier les tâches et les pratiques selon le besoin.</p>
+			{{/if}}
+		</div>
+
+		<div class="ribbon color05">
+			<div class="ribbon-body">
+				<div class="ribbon-content">
+					{{#if lang_en}}
+					<h3>Violence Prevention</h3>
+					{{else}}
+					<h4>Prévenir la violence</h4>
+					{{/if}}
+				</div>
+				<svg class="flag-tip">
+				  <polygon points="0,0 25,0 0,25 25,50 0,50"/>
+				</svg>
+			</div>
+			<div class="ribbon-pointer"><svg class="pointer"><polygon points="0,0 16,0 16,10"/></svg></div>
+		</div>
+		
+		<div class="content-wrap color05">
+			{{#if lang_en}}
+			<h5>Domestic Violence</h5>
+			<p>The employer is required to take every reasonable precaution in the circumstances for the protection of a worker if the employer becomes aware, or ought reasonably to be aware, that domestic violence may occur in the workplace.</p>
+			<p>Employer obligation extends only to risks of domestic violence that would likely result in physical injury that may occur in the workplace.</p>
+			<h5>Disclosing Information About Co-workers With Violent History</h5>
+			<p>Workplace violence legislation requires employers and supervisors to provide information, including personal information, to a worker about a person with a violent history, particularly if the worker could be expected to encounter this person during work and there is a risk of violence.</p>
+			<p>There is no guidance as to what constitutes violent history; however, it is clear that protection is critical. Open communication with your workforce is important.</p>
+			<h5>Right to Refuse</h5>
+			<p>Workplace violence legislation amends work refusal provisions to specifically grant a worker the right to refuse work if the workplace violence is likely to endanger the worker. The education sector at present is not exempt, for example educational assistants (EA).</p>
+			<p>An EA cannot refuse work if the risk of violence is a regular part of the job and has been evaluated and addressed by the Safety Plan (24) for that student.</p>
+			<p>A teacher has a limited right to refuse work because their Duty of Care overrules. A teacher must ensure the student is delivered into safe keeping with someone else before a right to refuse can be exercised.</p>
+			{{else}}
+			<h5>Violence conjugale</h5>
+			<p>L’employeur doit prendre toutes les précautions raisonnables afin de protéger son employé selon les circonstances, s’il apprend ou devrait raisonnablement avoir connaissance de la possibilité de violence familiale dans le lieu de travail.</p>
+			<p>Le devoir de l’employeur ne concerne que le risque de violence familiale qui est susceptible de se produire sur le lieu de travail au travail.</p>
+			<h5>La divulgation des renseignements concernant les collègues ayant des antécédents de violence</h5>
+			<p>Les lois régissant la violence au travail obligent tout employeur ou superviseur à fournir à un employé tous renseignements connus (y compris les renseignements d’ordre personnel) relatifs au risque de violence au travail d’un collègue ayant des antécédents de violence, surtout si l’employé est susceptible de rencontrer une telle personne au travail et si le risque de violence existe.</p>
+			<p>Bien que la définition d’antécédents de violence ne soit pas précise, il est crucial d’assurer la protection du personnel et, de ce fait, la communication transparente auprès des travailleurs s’avère d’une importance vitale.</p>
+			<h5>Le droit de refuser de travailler</h5>
+			<p>La loi régissant la violence au travail a modifié les articles traitant du droit de refuser de travailler (article 43 (3) LSST), notamment dans les cas où un danger physique existe. Le secteur de l’éducation n’est pas exempté de ce droit, par exemple en ce qui concerne les aides-enseignants (AE).</p>
+			<p>Cependant, l’aide-enseignant n’a pas le droit de refuser de travailler si le risque de violence est inhérent à son poste et qu’un plan d’intervention (24) a été élaboré à l’égard de l’élève et aborde la question.</p>
+			<p>Un droit limité de refuser de travailler s’applique aux enseignants, car le devoir de diligence prévaut. L’enseignant doit assurer la bonne garde de ses élèves avant de pouvoir exercer son droit de refuser de travailler.</p>
+			{{/if}}
+		</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>
